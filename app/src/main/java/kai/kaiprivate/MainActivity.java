@@ -8,6 +8,7 @@ import android.telecom.TelecomManager;
 import android.telephony.TelephonyManager;
 
 import kai.kaiprivate.func.Funcs;
+import kai.kaiprivate.tframe.PinyinListActivity;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -22,7 +23,8 @@ public class MainActivity extends ActionBarActivity {
 //        Funcs.useTelephoneManager((TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE));
 //
 //        mClass = KaiMultiImageSelectorActivity.class;
-        mClass = KaiPhotoGallary.class;
+//        mClass = KaiPhotoGallary.class;
+        mClass = PinyinListActivity.class;
 
         Intent intent = new Intent(MainActivity.this, mClass);
         startActivity(intent);

@@ -20,21 +20,15 @@ public class PinyinListActivity extends ActionBarActivity {
         setContentView(R.layout.activity_pinyin_list);
 
         ArrayList<IndexListItem> pinyinList = new ArrayList<>();
-        IndexListItem _item = new IndexListItem();
-        _item.setNickName("王");
-        _item.setIndexName("wang");
-        _item.setItemId("0");
-        pinyinList.add(_item);
-
-        _item.setNickName("申屠");
-        _item.setIndexName("shentu");
-        _item.setItemId("1");
-        pinyinList.add(_item);
-
-        _item.setNickName("高");
-        _item.setIndexName("gao");
-        _item.setItemId("2");
-        pinyinList.add(_item);
+        String[] nickName = {"一", "二", "三", "一", "二", "三", "一", "二", "三"};
+        String[] indexName = {"yi", "er", "san", "yi", "er", "san", "yi", "er", "san"};
+        for (int i = 0; i < nickName.length; i++) {
+            IndexListItem _item = new IndexListItem();
+            _item.setNickName(nickName[i]);
+            _item.setIndexName(indexName[i]);
+            _item.setItemId(String.valueOf(i));
+            pinyinList.add(_item);
+        }
 
         IndexListViewWithPinYinFragment indexListViewWithPinYinFragment = IndexListViewWithPinYinFragment.getInstance(pinyinList);
         getSupportFragmentManager().beginTransaction()
