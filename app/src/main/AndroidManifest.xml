@@ -42,6 +42,10 @@
             android:name=".thirdparty.KaiPullToRefresh"
             android:label="@string/title_activity_kai_pull_to_refresh" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiPhotoView"
+            android:label="@string/title_activity_kai_photo_view" >
+        </activity>
     </application>
 
 </manifest>

@@ -5,6 +5,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 
 import kai.kaiprivate.func.customview.UseLovelyView;
+import kai.kaiprivate.thirdparty.KaiPhotoView;
 import kai.kaiprivate.thirdparty.KaiPullToRefresh;
 
 public class MainActivity extends ActionBarActivity {
@@ -25,7 +26,8 @@ public class MainActivity extends ActionBarActivity {
 //        mClass = KaiPhotoGallary.class;
 //        mClass = PinyinListActivity.class;
 //        mClass = UseLovelyView.class;
-        mClass = KaiPullToRefresh.class;
+//        mClass = KaiPullToRefresh.class;
+        mClass = KaiPhotoView.class;
 
         Intent intent = new Intent(MainActivity.this, mClass);
         startActivityForResult(intent, RESULT);

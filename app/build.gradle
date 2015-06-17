@@ -25,5 +25,6 @@ dependencies {
     compile project(':multi-image-selector')
     compile project(':photogallery')
     compile project(':tframework')
+    compile 'com.github.chrisbanes.photoview:library:1.2.3'
     compile 'com.github.chrisbanes.actionbarpulltorefresh:library:0.9.9'
 }

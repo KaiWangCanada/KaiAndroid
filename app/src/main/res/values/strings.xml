@@ -10,4 +10,5 @@
     <string name="title_activity_pinyin_list">PinyinListActivity</string>
     <string name="title_activity_use_lovely_view">UseLovelyView</string>
     <string name="title_activity_kai_pull_to_refresh">KaiPullToRefresh</string>
+    <string name="title_activity_kai_photo_view">KaiPhotoView</string>
 </resources>
