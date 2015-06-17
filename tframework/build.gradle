@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.1"
+
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.+'
+    compile 'com.android.support:support-v4:21.0.0'
+    compile project(':xutils')
+    compile project(':Slidr')
+    //国际支付
+    compile project(':stripe')
+
+    //带索引的listview
+    compile project(':IndexListViewWithPinyin')
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+
+    //中文转拼音库
+    compile 'com.belerweb:pinyin4j:2.5.0'
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_loading">正在加载...</string>
+
+    <string name="submit_loading">正在提交...</string>
+
+
+    <string name="ruis_pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="ruis_pull_to_refresh_release_label">松开后刷新</string>
+    <string name="ruis_pull_to_refresh_refreshing_label">刷新</string>
+
+    <string name="ruis_pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="ruis_pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="ruis_pull_to_refresh_footer_refreshing_label">加载中</string>
+
+    <!--公共提示-->
+    <string name="ruis_common_no_more">暂无更多数据!</string>
+    <string name="ruis_common_NetworkError">网络出错了,请稍候再试...</string>
+    <string name="ruis_common_DataError">数据出错了,请稍候再试...</string>
+
+    <string name="ruis_common_exit_title">退出应用</string>
+    <string name="ruis_common_exit_message">确定退出客户端?</string>
+    <string name="ruis_common_exit_yes">退出</string>
+    <string name="ruis_common_exit_cancle">取消</string>
+
+
+    <string name="ruis_common_share_success">分享成功</string>
+    <string name="ruis_common_share_no_oauth">没有授权</string>
+    <string name="ruis_common_share_faild">分享失败</string>
+
+    <string name="ruis_common_share_wx_install">请先安装微信!</string>
+    <string name="ruis_common_share_wx_above_4_2">请升级至微信4.2以上!</string>
+
+    <string name="ruis_common_idLoading">正在努力加载...</string>
+
+    <string name="share_success">分享成功</string>
+    <string name="share_cancle">取消分享</string>
+    <string name="share_faild">分享失败</string>
+
+    <string name="ruis_already_save">保存完成</string>
+    <string name="ruis_download_app_complete">下载完成，点击安装</string>
+    <string name="ruis_update">更新</string>
+    <string name="ruis_already_download">已下载</string>
+
+    <string name="prompt">提示</string>
+
+    <string name="search_hint">请输入搜索关键字</string>
+    <string name="no_data">哎呀，没有相关信息</string>
+    <string name="sdCard_no_space">储存卡空间不足</string>
+
+    <string name="json_parse_error">数据解析错误,请稍候再试</string>
+
+    <string name="no_msg_toast">数据不可用,请稍后再试...</string>
+
+    <string name="ruis_a_moment_ago">刚刚</string>
+    <string name="ruis_minutes_ago">分钟前</string>
+    <string name="ruis_hours_ago">小时前</string>
+    <string name="ruis_a_hour_ago">1小时前</string>
+    <string name="ruis_a_day_ago">1天前</string>
+    <string name="ruis_days_ago">天前</string>
+
+    <string name="no_support_wx">请安装最新版微信</string>
+</resources>

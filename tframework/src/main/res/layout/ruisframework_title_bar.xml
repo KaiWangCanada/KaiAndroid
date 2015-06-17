@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="65dp">
+
+
+    <LinearLayout
+            android:id="@+id/common_back"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+        <ImageView android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:src="@drawable/ruisframework_default_icon_nav_back"
+                   />
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/default_loading"
+                />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

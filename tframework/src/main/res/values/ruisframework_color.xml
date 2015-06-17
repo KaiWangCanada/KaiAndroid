@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#e4e4e4</color>
+    <color name="split_line_light">#33ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="orange">#ffffbb33</color>
+    <color name="redlight">#a00000</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="green">#ff99cc00</color>
+    <color name="blue_light">#ff33b5e5</color>
+    <color name="nocolor">#00000000</color>
+    <color name="nocolorhalf">#3f000000</color>
+
+    <color name="whitecolorhalf">#3fffffff</color>
+
+    <color name="black_translucent">#43000000</color>
+    <color name="blue_translucent">#4300AFFF</color>
+
+    <color name="listview_line">#ABABAB</color>
+    <color name="light_gray">#3f484b</color>
+    <color name="coolframework_text_orange">#ff9000</color>
+
+    <color name="pic_dialog_bg">#10000000</color>
+    <color name="dialog_background">#ddf3f3f3</color>
+    <color name="dialog_selector_item">#00abf3</color>
+    <color name="divide_line">#a4a4a4</color>
+
+    <color name="text_40">#282828</color>
+    <color name="text_80">#505050</color>
+    <color name="text_120">#787878</color>
+    <color name="text_116">#747474</color>
+    <color name="text_180">#b4b4b4</color>
+
+</resources>

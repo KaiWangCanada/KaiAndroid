@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ruis_a_moment_ago">A Moment Ago</string>
+    <string name="ruis_minutes_ago">&#160;Minutes Ago</string>
+    <string name="ruis_hours_ago">&#160;Hours Ago</string>
+    <string name="ruis_a_hour_ago">1 Hour Ago</string>
+    <string name="ruis_a_day_ago">1 Day Ago</string>
+    <string name="ruis_days_ago">&#160;Days Ago</string>
+
+    <string name="json_parse_error">data parse error</string>
+    <string name="no_msg_toast">no data,please try again later...</string>
+
+    <string name="default_loading">loading...</string>
+
+
+    <string name="ruis_pull_to_refresh_pull_label">pull to refresh</string>
+    <string name="ruis_pull_to_refresh_release_label">release to refresh</string>
+    <string name="ruis_pull_to_refresh_refreshing_label">refresging...</string>
+
+    <string name="ruis_pull_to_refresh_footer_release_label">release to load more</string>
+    <string name="ruis_pull_to_refresh_footer_pull_label">pull to load more</string>
+    <string name="ruis_pull_to_refresh_footer_refreshing_label">loading</string>
+
+    <!--公共提示-->
+    <string name="ruis_common_no_more">no more data!</string>
+    <string name="ruis_common_NetworkError">network error ,please try again</string>
+    <string name="ruis_common_DataError">data error,please try again...</string>
+
+    <string name="ruis_common_exit_title">exit</string>
+    <string name="ruis_common_exit_message">Are you sure to exit?</string>
+    <string name="ruis_common_exit_yes">Yes</string>
+    <string name="ruis_common_exit_cancle">No</string>
+
+
+    <string name="ruis_common_share_success">share success</string>
+    <string name="ruis_common_share_no_oauth">no oauth</string>
+    <string name="ruis_common_share_faild">share faild</string>
+
+    <string name="ruis_common_share_wx_install">please install WeChat first</string>
+    <string name="ruis_common_share_wx_above_4_2">please update WeChat to 4.2</string>
+
+    <string name="ruis_common_idLoading">loading...</string>
+
+    <string name="share_success">share success</string>
+    <string name="share_cancle">share cancle</string>
+    <string name="share_faild">share faild</string>
+
+    <string name="ruis_already_save">saved</string>
+    <string name="ruis_download_app_complete">please install</string>
+    <string name="ruis_update">update</string>
+    <string name="ruis_already_download">downloaded</string>
+
+    <string name="prompt">tips</string>
+
+    <string name="search_hint">searching...</string>
+    <string name="no_data">oops...no data</string>
+    <string name="sdCard_no_space">oops...sdCard no spcae</string>
+
+</resources>

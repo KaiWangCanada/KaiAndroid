@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/IndexListViewWithPinyin/IndexListViewWithPinyin.iml" filepath="$PROJECT_DIR$/IndexListViewWithPinyin/IndexListViewWithPinyin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KaiAndroid.iml" filepath="$PROJECT_DIR$/KaiAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Slidr/Slidr.iml" filepath="$PROJECT_DIR$/Slidr/Slidr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multi-image-selector/multi-image-selector.iml" filepath="$PROJECT_DIR$/multi-image-selector/multi-image-selector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photogallery/photogallery.iml" filepath="$PROJECT_DIR$/photogallery/photogallery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stripe/stripe.iml" filepath="$PROJECT_DIR$/stripe/stripe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tframework/tframework.iml" filepath="$PROJECT_DIR$/tframework/tframework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xutils/xutils.iml" filepath="$PROJECT_DIR$/xutils/xutils.iml" />
+    </modules>
+  </component>
+</project>

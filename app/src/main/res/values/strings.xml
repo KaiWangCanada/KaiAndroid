@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">KaiPrivate</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_kai_multi_image_selector">KaiMultiImageSelectorActivity</string>
+    <string name="title_activity_kai_photo_gallary">KaiPhotoGallary</string>
+    <string name="title_activity_use_application">UseApplicationActivity</string>
+    <string name="title_activity_kai_telephony_manager">KaiTelephonyManager</string>
+    <string name="title_activity_pinyin_list">PinyinListActivity</string>
+</resources>

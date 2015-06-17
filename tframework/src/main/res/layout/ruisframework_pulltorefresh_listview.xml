@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:background="@color/white"
+        >
+
+    <com.unit.common.ui.refresh.PullToRefreshView
+            android:id="@+id/framework_main_pull_refresh_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+        <!-- 这里放置listview,gridview或者scrollview的布局 ,PullToRefreshView
+        要设置android:orientation="vertical"属性
+        否则,显示不正确-->
+        <ListView
+                android:id="@+id/framework_pulltorefresh_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fastScrollEnabled="true"
+                android:fadeScrollbars="true"
+                android:divider="@null"
+                android:cacheColorHint="@android:color/transparent"
+                android:listSelector="@android:color/transparent"
+                android:fadingEdge="none"/>
+
+    </com.unit.common.ui.refresh.PullToRefreshView>
+
+    <ProgressBar
+            android:id="@+id/loadingprogress"
+            android:layout_width="@dimen/progressbar_width"
+            android:layout_height="@dimen/progressbar_width"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@anim/ruisframework_progressbar_anim"
+            android:visibility="invisible"/>
+
+</FrameLayout>

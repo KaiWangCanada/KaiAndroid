@@ -1,0 +1,14 @@
+<resources>
+    <string name="title_activity_media_chose">Choose picture</string>
+    <string name="app_name">appname</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_crop_image">CropImageActivity</string>
+    <string name="all_photo">All Photo</string>
+    <string name="save">Save</string>
+    <string name="file_not_exist">File not exist</string>
+    <string name="external_sd_card_not_mounted">External SD card not mounted</string>
+</resources>
