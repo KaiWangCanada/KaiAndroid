@@ -20,19 +20,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".KaiMultiImageSelectorActivity"
+            android:name=".thirdparty.KaiMultiImageSelectorActivity"
             android:label="@string/title_activity_kai_multi_image_selector" >
         </activity>
         <activity
             android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
             android:configChanges="orientation|screenSize" />
         <activity
-            android:name=".KaiPhotoGallary"
+            android:name=".thirdparty.KaiPhotoGallary"
             android:label="@string/title_activity_kai_photo_gallary" >
         </activity>
         <activity
             android:name=".tframe.PinyinListActivity"
             android:label="@string/title_activity_pinyin_list" >
+        </activity>
+        <activity
+            android:name=".func.customview.UseLovelyView"
+            android:label="@string/title_activity_use_lovely_view" >
         </activity>
     </application>
 

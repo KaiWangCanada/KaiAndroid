@@ -1,17 +1,10 @@
 package kai.kaiprivate;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.telecom.TelecomManager;
-import android.telephony.TelephonyManager;
-import android.util.Log;
 
-import com.unit.common.resource.MResource;
-
-import kai.kaiprivate.func.Funcs;
-import kai.kaiprivate.tframe.PinyinListActivity;
+import kai.kaiprivate.func.customview.UseLovelyView;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -24,15 +17,16 @@ public class MainActivity extends ActionBarActivity {
 //
 //        Funcs.useApplication((KaiApplication) getApplication());
 //        Funcs.useTelephoneManager((TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE));
-        Funcs.useMResource(MainActivity.this, "id", "tv");
+//        Funcs.useMResource(MainActivity.this, "id", "tv");
 
 //
 //        mClass = KaiMultiImageSelectorActivity.class;
 //        mClass = KaiPhotoGallary.class;
 //        mClass = PinyinListActivity.class;
-//
-//        Intent intent = new Intent(MainActivity.this, mClass);
-//        startActivity(intent);
+        mClass = UseLovelyView.class;
+
+        Intent intent = new Intent(MainActivity.this, mClass);
+        startActivity(intent);
 
     }
 

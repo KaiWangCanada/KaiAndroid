@@ -1,14 +1,13 @@
-package kai.kaiprivate;
+package kai.kaiprivate.thirdparty;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 
 import java.util.ArrayList;
 
+import kai.kaiprivate.R;
 import me.nereo.multi_image_selector.MultiImageSelectorActivity;
 
 

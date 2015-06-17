@@ -1,15 +1,15 @@
-package kai.kaiprivate;
+package kai.kaiprivate.thirdparty;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 
 import com.wq.photo.MediaChoseActivity;
 
 import java.util.ArrayList;
+
+import kai.kaiprivate.R;
 
 
 public class KaiPhotoGallary extends ActionBarActivity {
