@@ -9,4 +9,5 @@
     <string name="title_activity_kai_telephony_manager">KaiTelephonyManager</string>
     <string name="title_activity_pinyin_list">PinyinListActivity</string>
     <string name="title_activity_use_lovely_view">UseLovelyView</string>
+    <string name="title_activity_kai_pull_to_refresh">KaiPullToRefresh</string>
 </resources>

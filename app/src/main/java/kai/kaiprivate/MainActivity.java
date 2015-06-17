@@ -5,9 +5,10 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 
 import kai.kaiprivate.func.customview.UseLovelyView;
+import kai.kaiprivate.thirdparty.KaiPullToRefresh;
 
 public class MainActivity extends ActionBarActivity {
-
+    private static final int RESULT = 0;
     Class mClass;
 
     @Override
@@ -23,11 +24,17 @@ public class MainActivity extends ActionBarActivity {
 //        mClass = KaiMultiImageSelectorActivity.class;
 //        mClass = KaiPhotoGallary.class;
 //        mClass = PinyinListActivity.class;
-        mClass = UseLovelyView.class;
+//        mClass = UseLovelyView.class;
+        mClass = KaiPullToRefresh.class;
 
         Intent intent = new Intent(MainActivity.this, mClass);
-        startActivity(intent);
+        startActivityForResult(intent, RESULT);
 
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        finish();
+    }
 }

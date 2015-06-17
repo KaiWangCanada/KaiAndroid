@@ -2,38 +2,41 @@ package kai.kaiprivate.thirdparty;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+
+import uk.co.senab.actionbarpulltorefresh.library.ActionBarPullToRefresh;
+import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout;
 
 import kai.kaiprivate.R;
+import uk.co.senab.actionbarpulltorefresh.library.listeners.OnRefreshListener;
 
 public class KaiPullToRefresh extends ActionBarActivity {
+    private PullToRefreshLayout mPullToRefreshLayout;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kai_pull_to_refresh);
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_kai_pull_to_refresh, menu);
-        return true;
-    }
+        // Now find the PullToRefreshLayout to setup
+        mPullToRefreshLayout = (PullToRefreshLayout) findViewById(R.id.ptr_layout);
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
+        // Now setup the PullToRefreshLayout
+        ActionBarPullToRefresh.from(this)
+                // Mark All Children as pullable
+                .allChildrenArePullable()
+                        // Set a OnRefreshListener
+                .listener(new OnRefreshListener() {
+                    @Override
+                    public void onRefreshStarted(View view) {
+                        Log.v("kai", "refreshing");
+                        mPullToRefreshLayout.setRefreshComplete();
+                    }
+                })
+        // Finally commit the setup to our PullToRefreshLayout
+        .setup(mPullToRefreshLayout);
     }
 }

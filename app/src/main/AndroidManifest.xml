@@ -38,6 +38,10 @@
             android:name=".func.customview.UseLovelyView"
             android:label="@string/title_activity_use_lovely_view" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiPullToRefresh"
+            android:label="@string/title_activity_kai_pull_to_refresh" >
+        </activity>
     </application>
 
 </manifest>
