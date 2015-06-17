@@ -6,6 +6,9 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.telecom.TelecomManager;
 import android.telephony.TelephonyManager;
+import android.util.Log;
+
+import com.unit.common.resource.MResource;
 
 import kai.kaiprivate.func.Funcs;
 import kai.kaiprivate.tframe.PinyinListActivity;
@@ -17,17 +20,19 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
 //
 //        Funcs.useApplication((KaiApplication) getApplication());
 //        Funcs.useTelephoneManager((TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE));
+        Funcs.useMResource(MainActivity.this, "id", "tv");
+
 //
 //        mClass = KaiMultiImageSelectorActivity.class;
 //        mClass = KaiPhotoGallary.class;
-        mClass = PinyinListActivity.class;
-
-        Intent intent = new Intent(MainActivity.this, mClass);
-        startActivity(intent);
+//        mClass = PinyinListActivity.class;
+//
+//        Intent intent = new Intent(MainActivity.this, mClass);
+//        startActivity(intent);
 
     }
 

@@ -1,9 +1,13 @@
 package kai.kaiprivate.func;
 
+import android.content.Context;
 import android.telecom.TelecomManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
+import com.unit.common.resource.MResource;
+
+import kai.kaiprivate.MainActivity;
 import kai.kaiprivate.droid.application.KaiApplication;
 
 /**
@@ -14,7 +18,6 @@ public class Funcs {
     public static void useApplication(KaiApplication pKaiApplication) {
         Log.v("kai", pKaiApplication.mStr);
     }
-
     public static void useTelephoneManager(TelephonyManager tm) {
         String IMEINumber=tm.getDeviceId();
         String subscriberID=tm.getDeviceId();
@@ -59,4 +62,8 @@ public class Funcs {
         Log.v("kai", info);
 
     }
+    public static void useMResource(Context context, String className, String name) {
+        Log.v("kai", String.valueOf(MResource.getIdByName(context, className, name)));
+    }
+
 }
