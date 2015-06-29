@@ -7,6 +7,7 @@ import android.os.Bundle;
 import kai.kaiprivate.func.customview.UseLovelyView;
 import kai.kaiprivate.thirdparty.KaiPhotoView;
 import kai.kaiprivate.thirdparty.KaiPhotoViewB;
+import kai.kaiprivate.thirdparty.KaiPhotoViewPngAbove;
 import kai.kaiprivate.thirdparty.KaiPullToRefresh;
 
 public class MainActivity extends ActionBarActivity {
@@ -29,7 +30,8 @@ public class MainActivity extends ActionBarActivity {
 //        mClass = UseLovelyView.class;
 //        mClass = KaiPullToRefresh.class;
 //        mClass = KaiPhotoView.class;
-        mClass = KaiPhotoViewB.class;
+//        mClass = KaiPhotoViewB.class;
+        mClass = KaiPhotoViewPngAbove.class;
 
         Intent intent = new Intent(MainActivity.this, mClass);
         startActivityForResult(intent, RESULT);

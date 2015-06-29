@@ -50,6 +50,10 @@
             android:name=".thirdparty.KaiPhotoViewB"
             android:label="@string/title_activity_kai_photo_view_b" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiPhotoViewPngAbove"
+            android:label="@string/title_activity_kai_photo_view_png_above" >
+        </activity>
     </application>
 
 </manifest>
