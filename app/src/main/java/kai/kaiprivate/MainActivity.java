@@ -5,6 +5,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 
 import kai.kaiprivate.func.customview.UseLovelyView;
+import kai.kaiprivate.opencv.KaiOpenCV;
 import kai.kaiprivate.thirdparty.KaiPhotoView;
 import kai.kaiprivate.thirdparty.KaiPhotoViewB;
 import kai.kaiprivate.thirdparty.KaiPhotoViewPngAbove;
@@ -31,7 +32,8 @@ public class MainActivity extends ActionBarActivity {
 //        mClass = KaiPullToRefresh.class;
 //        mClass = KaiPhotoView.class;
 //        mClass = KaiPhotoViewB.class;
-        mClass = KaiPhotoViewPngAbove.class;
+//        mClass = KaiPhotoViewPngAbove.class;
+        mClass = KaiOpenCV.class;
 
         Intent intent = new Intent(MainActivity.this, mClass);
         startActivityForResult(intent, RESULT);

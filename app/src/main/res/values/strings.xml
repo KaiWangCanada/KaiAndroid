@@ -13,4 +13,5 @@
     <string name="title_activity_kai_photo_view">KaiPhotoView</string>
     <string name="title_activity_kai_photo_view_b">KaiPhotoViewB</string>
     <string name="title_activity_kai_photo_view_png_above">KaiPhotoViewPngAbove</string>
+    <string name="title_activity_kai_open_cv">KaiOpenCV</string>
 </resources>

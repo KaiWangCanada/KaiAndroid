@@ -1,5 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/l_hair"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -10,12 +11,14 @@
 
     <uk.co.senab.photoview.PhotoView
         android:id="@+id/pv_face"
-
+        android:src="@drawable/lena"
+        android:scaleType="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <uk.co.senab.photoview.PhotoView
+    <ImageView
         android:id="@+id/pv_hair"
+        android:scaleType="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 

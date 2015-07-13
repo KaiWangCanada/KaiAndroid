@@ -104,6 +104,7 @@
     <orderEntry type="library" exported="" name="stripe-java-1.15.1" level="project" />
     <orderEntry type="module" module-name="tframework" exported="" />
     <orderEntry type="module" module-name="photogallery" exported="" />
+    <orderEntry type="module" module-name="openCVLibrary300" exported="" />
     <orderEntry type="module" module-name="multi-image-selector" exported="" />
   </component>
 </module>
