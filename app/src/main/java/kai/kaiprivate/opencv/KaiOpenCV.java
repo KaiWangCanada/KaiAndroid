@@ -1,6 +1,7 @@
 package kai.kaiprivate.opencv;
 
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,6 +13,7 @@ import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.LoaderCallbackInterface;
 import org.opencv.android.OpenCVLoader;
 import org.opencv.android.Utils;
+import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.imgproc.Imgproc;
 
@@ -30,12 +32,15 @@ public class KaiOpenCV extends ActionBarActivity {
                 case LoaderCallbackInterface.SUCCESS:
                 {
                     // OpenCV code
-                    Mat pMat = null;
-                    try {
+                    Bitmap oriBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.hair);
+                    Mat pMat;
+                    pMat = new Mat(oriBitmap.getHeight(), oriBitmap.getWidth(), CvType.CV_8UC4);
+                    Utils.bitmapToMat(oriBitmap, pMat);
+                    /*try {
                         pMat = Utils.loadResource(KaiOpenCV.this, R.drawable.lena);
                     } catch (IOException e) {
                         e.printStackTrace();
-                    }
+                    }*/
                     Log.v("kai", String.valueOf(pMat.type()));
 
 //                    Imgproc.cvtColor(pMat, pMat, Imgproc.COLOR_RGB2GRAY);
