@@ -30,6 +30,9 @@ import kai.kaiprivate.R;
 
 public class KaiOpenCV extends AppCompatActivity implements View.OnTouchListener {
     ImageView mIvHair;
+    int mPaddingX;
+    int mPaddingY;
+
     RelativeLayout mLayoutImage;
     Bitmap mBitmapHair;
 
@@ -47,7 +50,10 @@ public class KaiOpenCV extends AppCompatActivity implements View.OnTouchListener
     int mWidth;
     int mSize;
     double mScale = .5;
-    double mSigma = 2500.;
+    double mSigma = 1600.;
+    double mSensitivityRatio = 10;
+    double mRobustRatio = 0.4;
+
     int mLayoutImageHeight;
     int mLayoutImageWidth;
     int mOff_x = 0;
@@ -131,6 +137,11 @@ public class KaiOpenCV extends AppCompatActivity implements View.OnTouchListener
 //        Utils.matToBitmap(mMatHair, _BitmapHair);
 
         mIvHair.setImageBitmap(mBitmapHair);
+        // change hair location
+        mPaddingX = 100;
+        mPaddingY = 0;
+        mIvHair.setPadding(mPaddingX, mPaddingY, 0, 0);
+//        mIvHair.setLayoutParams(cardParams);
     }
 
     @Override
@@ -150,8 +161,8 @@ public class KaiOpenCV extends AppCompatActivity implements View.OnTouchListener
 //        Log.v("kai", "mOff_x: " + String.valueOf(mOff_x));
 //        Log.v("kai", "mOff_y: " + String.valueOf(mOff_y));
 
-        final int _x = (int) (event.getX()) + mOff_x;
-        final int _y = (int) (event.getY()) + mOff_y;
+        final int _x = (int) (event.getX()) + mOff_x - mPaddingX;
+        final int _y = (int) (event.getY()) + mOff_y - mPaddingY;
 
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
@@ -165,7 +176,7 @@ public class KaiOpenCV extends AppCompatActivity implements View.OnTouchListener
             case MotionEvent.ACTION_MOVE:
                 Log.v("kai", "moving");
                 //if move stopped
-                if(Math.sqrt((_x - mP.x) * (_x - mP.x) + (_y - mP.y) * (_y - mP.y)) > 20) {
+                if(Math.sqrt((_x - mP.x) * (_x - mP.x) + (_y - mP.y) * (_y - mP.y)) > mSensitivityRatio) {
                     Log.v("kai", "move enough, warping");
                     // do warp
                     new Thread(new Runnable() {
@@ -189,6 +200,7 @@ public class KaiOpenCV extends AppCompatActivity implements View.OnTouchListener
                                 for(int k = 0; k < mSize; k++) {
                                     int j = k / mWidth;
                                     int i = k - j * mWidth;
+                                    // todo: change .get && .put to array, make it faster
                                     // find midx, midy
                                     double midx = mMid_x.get(j, i)[0];
                                     double midy = mMid_y.get(j, i)[0];
