@@ -21,6 +21,7 @@ import org.opencv.android.OpenCVLoader;
 import org.opencv.android.Utils;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
+import org.opencv.core.Scalar;
 import org.opencv.imgproc.Imgproc;
 
 import java.io.IOException;
@@ -32,13 +33,19 @@ public class KaiOpenCV extends AppCompatActivity implements View.OnTouchListener
     RelativeLayout mLayoutImage;
     Bitmap mBitmapHair;
 
+    Mat mMatHair;
+    Mat mMatHairNew;
+
+    Mat mMap_x, mMap_y;
+
     Point mP;
     Point mQ;
     Point dP;
     int mHeight;
     int mWidth;
     int mSize;
-    double mScale = 1;
+    double mScale = .5;
+    double mSigma = 2500.;
     int mLayoutImageHeight;
     int mLayoutImageWidth;
     int mOff_x = 0;
@@ -69,17 +76,19 @@ public class KaiOpenCV extends AppCompatActivity implements View.OnTouchListener
     };
 
     private void doOpenCV() {
-        Mat _MatHair;
-        _MatHair = new Mat(mBitmapHair.getHeight(), mBitmapHair.getWidth(), CvType.CV_8UC4);
-        Utils.bitmapToMat(mBitmapHair, _MatHair);
+        mMatHair = new Mat(mBitmapHair.getHeight(), mBitmapHair.getWidth(), CvType.CV_8UC4);
+        Utils.bitmapToMat(mBitmapHair, mMatHair);
+//        mMatHairNew.create(mMatHair.size(), mMatHair.type());
+//        mMap_x.create(mMatHair.size(), CvType.CV_32FC1);
+//        mMap_y.create(mMatHair.size(), CvType.CV_32FC1);
+        mMatHairNew = new Mat(mMatHair.size(), mMatHair.type());
+        mMap_x = new Mat(mMatHair.size(), CvType.CV_32FC1);
+        mMap_y = new Mat(mMatHair.size(), CvType.CV_32FC1);
 
-        // warp here
+//        Bitmap _BitmapHair = Bitmap.createBitmap(mMatHair.cols(), mMatHair.rows(), Bitmap.Config.ARGB_8888);
+//        Utils.matToBitmap(mMatHair, _BitmapHair);
 
-
-        Bitmap _BitmapHair = Bitmap.createBitmap(_MatHair.cols(), _MatHair.rows(), Bitmap.Config.ARGB_8888);
-        Utils.matToBitmap(_MatHair, _BitmapHair);
-
-        mIvHair.setImageBitmap(_BitmapHair);
+        mIvHair.setImageBitmap(mBitmapHair);
     }
 
     @Override
@@ -141,44 +150,55 @@ public class KaiOpenCV extends AppCompatActivity implements View.OnTouchListener
 //                                    double d = Math.sqrt((i - mQ.x) * (i - mQ.x) + (j - mQ.y) * (j - mQ.y));
                                     double d = (i - mQ.x) * (i - mQ.x) + (j - mQ.y) * (j - mQ.y);
 //                                    double t = 1. - Math.sqrt(d) / 300.;
-                                    double t = Math.exp(- d / 9000);
+                                    double t = Math.exp(- d / mSigma);
                                     if(t < 0) t = 0;
 
-                                    double ti = (i - dP.x * t);
-                                    double tj = (j - dP.y * t);
-                                    int ri = (int) ti;
-                                    int rj = (int) tj;
-//                                    int ri = getRound(ti);
-//                                    int rj = getRound(tj);
-                                    double tx = ti - ri;
-                                    double ty = tj - rj;
+                                    // get map_x, map_y
+                                    mMap_x.put(j, i, i - dP.x * t);
+                                    mMap_y.put(j, i, j - dP.y * t);
 
-                                    if(ri < mWidth - 1 && ri >= 0 && rj < mHeight - 1 && rj >= 0) {
-                                        mResPixels[k] = mPixels[rj * mWidth + ri];
-                                        {
-                                            int ta = 0, tr = 0, tg = 0, tb = 0;
-                                            int t11 = 0, t12 = 0, t21 = 0, t22 = 0;
-                                            t11 = mPixels[rj * mWidth + ri];
-                                            t12 = mPixels[rj * mWidth + (ri + 1)];
-                                            t21 = mPixels[(rj + 1) * mWidth + ri];
-                                            t22 = mPixels[(rj + 1) * mWidth + (ri + 1)];
-                                            ta = (int) ((Color.alpha(t11) * (1 - ty) + Color.alpha(t21) * ty) * (1 - tx) + (Color.alpha(t12) * (1 - ty) + Color.alpha(t22) * ty) * tx);
-                                            if (ta != 0) {
-                                                tr = (int) ((Color.red(t11) * (1 - ty) + Color.red(t21) * ty) * (1 - tx) + (Color.red(t12) * (1 - ty) + Color.red(t22) * ty) * tx);
-                                                tg = (int) ((Color.green(t11) * (1 - ty) + Color.green(t21) * ty) * (1 - tx) + (Color.green(t12) * (1 - ty) + Color.green(t22) * ty) * tx);
-                                                tb = (int) ((Color.blue(t11) * (1 - ty) + Color.blue(t21) * ty) * (1 - tx) + (Color.blue(t12) * (1 - ty) + Color.blue(t22) * ty) * tx);
-                                            }
-                                            mResPixels[k] = Color.argb(ta, tr, tg, tb);
-//                                            mResPixels[k] = (int) ((mPixels[rj * mWidth + ri] * (1 - ty) + mPixels[(rj + 1) * mWidth + ri] * ty) * (1 - tx) + (mPixels[rj * mWidth + ri + 1] * (1 - ty) + mPixels[(rj + 1) * mWidth + ri + 1] * ty) * tx);
-
-                                        }
-                                    }
+//                                    double ti = (i - dP.x * t);
+//                                    double tj = (j - dP.y * t);
+//                                    int ri = (int) ti;
+//                                    int rj = (int) tj;
+////                                    int ri = getRound(ti);
+////                                    int rj = getRound(tj);
+//                                    double tx = ti - ri;
+//                                    double ty = tj - rj;
+//
+//                                    if(ri < mWidth - 1 && ri >= 0 && rj < mHeight - 1 && rj >= 0) {
+//                                        mResPixels[k] = mPixels[rj * mWidth + ri];
+//                                        {
+//                                            int ta = 0, tr = 0, tg = 0, tb = 0;
+//                                            int t11 = 0, t12 = 0, t21 = 0, t22 = 0;
+//                                            t11 = mPixels[rj * mWidth + ri];
+//                                            t12 = mPixels[rj * mWidth + (ri + 1)];
+//                                            t21 = mPixels[(rj + 1) * mWidth + ri];
+//                                            t22 = mPixels[(rj + 1) * mWidth + (ri + 1)];
+//                                            ta = (int) ((Color.alpha(t11) * (1 - ty) + Color.alpha(t21) * ty) * (1 - tx) + (Color.alpha(t12) * (1 - ty) + Color.alpha(t22) * ty) * tx);
+//                                            if (ta != 0) {
+//                                                tr = (int) ((Color.red(t11) * (1 - ty) + Color.red(t21) * ty) * (1 - tx) + (Color.red(t12) * (1 - ty) + Color.red(t22) * ty) * tx);
+//                                                tg = (int) ((Color.green(t11) * (1 - ty) + Color.green(t21) * ty) * (1 - tx) + (Color.green(t12) * (1 - ty) + Color.green(t22) * ty) * tx);
+//                                                tb = (int) ((Color.blue(t11) * (1 - ty) + Color.blue(t21) * ty) * (1 - tx) + (Color.blue(t12) * (1 - ty) + Color.blue(t22) * ty) * tx);
+//                                            }
+//                                            mResPixels[k] = Color.argb(ta, tr, tg, tb);
+////                                            mResPixels[k] = (int) ((mPixels[rj * mWidth + ri] * (1 - ty) + mPixels[(rj + 1) * mWidth + ri] * ty) * (1 - tx) + (mPixels[rj * mWidth + ri + 1] * (1 - ty) + mPixels[(rj + 1) * mWidth + ri + 1] * ty) * tx);
+//
+//                                        }
+//                                    }
                                 }
 
-                                final Bitmap _BitmapHairNew = Bitmap.createBitmap(mWidth, mHeight,
-                                        Bitmap.Config.ARGB_8888);
-                                _BitmapHairNew.setPixels(mResPixels, 0, mWidth, 0, 0, mWidth,
-                                        mHeight);
+                                // remap
+                                Imgproc.remap(mMatHair, mMatHairNew, mMap_x, mMap_y, Imgproc
+                                        .INTER_LINEAR, 0, new Scalar(0, 0, 0));
+
+                                final Bitmap _BitmapHairNew = Bitmap.createBitmap(mMatHairNew.cols(), mMatHairNew.rows(), Bitmap.Config.ARGB_8888);
+                                Utils.matToBitmap(mMatHairNew, _BitmapHairNew);
+
+//                                final Bitmap _BitmapHairNew = Bitmap.createBitmap(mWidth, mHeight,
+//                                        Bitmap.Config.ARGB_8888);
+//                                _BitmapHairNew.setPixels(mResPixels, 0, mWidth, 0, 0, mWidth,
+//                                        mHeight);
 
                                 runOnUiThread(new Runnable() {
                                     @Override
@@ -191,10 +211,13 @@ public class KaiOpenCV extends AppCompatActivity implements View.OnTouchListener
                                 mP.x = mQ.x;
                                 mP.y = mQ.y;
 
+                                // reset mMatHair
+                                mMatHair = mMatHairNew;
+
                                 // reset mPixels
-                                for(int i = 0; i < mSize; i ++) {
-                                    mPixels[i] = mResPixels[i];
-                                }
+//                                for(int i = 0; i < mSize; i ++) {
+//                                    mPixels[i] = mResPixels[i];
+//                                }
 
                                 // reset mIsWarping
                                 mIsWarping = false;
