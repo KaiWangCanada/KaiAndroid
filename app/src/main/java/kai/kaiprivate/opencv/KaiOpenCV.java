@@ -36,6 +36,8 @@ public class KaiOpenCV extends AppCompatActivity implements View.OnTouchListener
     Mat mMatHair;
     Mat mMatHairNew;
 
+    Mat mMid_x, mMid_y;
+    Mat mPre_x, mPre_y;
     Mat mMap_x, mMap_y;
 
     Point mP;
@@ -76,14 +78,54 @@ public class KaiOpenCV extends AppCompatActivity implements View.OnTouchListener
     };
 
     private void doOpenCV() {
+        mIvHair = (ImageView) findViewById(R.id.iv_hair);
+        mBitmapHair = BitmapFactory.decodeResource(getResources(), R.drawable.hair);
+        mLayoutImage = (RelativeLayout) findViewById(R.id.l_hair);
+        mHeight = mBitmapHair.getHeight();
+        mWidth = mBitmapHair.getWidth();
+        mBitmapHair = Bitmap.createScaledBitmap(mBitmapHair, (int) (mWidth * mScale), (int)
+                (mHeight * mScale), false);
+        mHeight = mBitmapHair.getHeight();
+        mWidth = mBitmapHair.getWidth();
+        mSize = mHeight * mWidth;
+
+        mPixels = new int[mSize];
+        mResPixels = new int[mSize];
+
+        mIvHair.setOnTouchListener(this);
+
+        mP = new Point();
+        mQ = new Point();
+        dP = new Point();
+
+        mIsWarping = false;
+        mHandler = new Handler();
+
+        //get image matrix
+        mBitmapHair.getPixels(mPixels, 0, mWidth, 0, 0, mWidth, mHeight);
+
         mMatHair = new Mat(mBitmapHair.getHeight(), mBitmapHair.getWidth(), CvType.CV_8UC4);
         Utils.bitmapToMat(mBitmapHair, mMatHair);
 //        mMatHairNew.create(mMatHair.size(), mMatHair.type());
 //        mMap_x.create(mMatHair.size(), CvType.CV_32FC1);
 //        mMap_y.create(mMatHair.size(), CvType.CV_32FC1);
         mMatHairNew = new Mat(mMatHair.size(), mMatHair.type());
+        mMid_x = new Mat(mMatHair.size(), CvType.CV_32FC1);
+        mMid_y = new Mat(mMatHair.size(), CvType.CV_32FC1);
+        mPre_x = new Mat(mMatHair.size(), CvType.CV_32FC1);
+        mPre_y = new Mat(mMatHair.size(), CvType.CV_32FC1);
         mMap_x = new Mat(mMatHair.size(), CvType.CV_32FC1);
         mMap_y = new Mat(mMatHair.size(), CvType.CV_32FC1);
+
+        for(int i = 0; i < mWidth; i++) {
+            for(int j = 0; j < mHeight; j++) {
+                mPre_x.put(j,i,i);
+                mPre_y.put(j,i,j);
+            }
+        }
+
+        mMid_x = mPre_x;
+        mMid_y = mPre_y;
 
 //        Bitmap _BitmapHair = Bitmap.createBitmap(mMatHair.cols(), mMatHair.rows(), Bitmap.Config.ARGB_8888);
 //        Utils.matToBitmap(mMatHair, _BitmapHair);
@@ -147,15 +189,24 @@ public class KaiOpenCV extends AppCompatActivity implements View.OnTouchListener
                                 for(int k = 0; k < mSize; k++) {
                                     int j = k / mWidth;
                                     int i = k - j * mWidth;
+                                    // find midx, midy
+                                    double midx = mMid_x.get(j, i)[0];
+                                    double midy = mMid_y.get(j, i)[0];
+//                                    Log.v("kai", String.valueOf(mMid_y.get(j, i)[0]));
+//                                    Log.v("kai", String.valueOf(i));
+//                                    double midx = i;
+//                                    double midy = j;
 //                                    double d = Math.sqrt((i - mQ.x) * (i - mQ.x) + (j - mQ.y) * (j - mQ.y));
-                                    double d = (i - mQ.x) * (i - mQ.x) + (j - mQ.y) * (j - mQ.y);
+                                    double d = (midx - mQ.x) * (midx - mQ.x) + (midy - mQ.y) * (midy - mQ.y);
 //                                    double t = 1. - Math.sqrt(d) / 300.;
                                     double t = Math.exp(- d / mSigma);
                                     if(t < 0) t = 0;
 
                                     // get map_x, map_y
-                                    mMap_x.put(j, i, i - dP.x * t);
-                                    mMap_y.put(j, i, j - dP.y * t);
+                                    mMid_x.put(j, i, midx - dP.x * t);
+                                    mMid_y.put(j, i, midy - dP.y * t);
+                                    mMap_x.put(j, i, midx - dP.x * t);
+                                    mMap_y.put(j, i, midy - dP.y * t);
 
 //                                    double ti = (i - dP.x * t);
 //                                    double tj = (j - dP.y * t);
@@ -188,9 +239,14 @@ public class KaiOpenCV extends AppCompatActivity implements View.OnTouchListener
 //                                    }
                                 }
 
+//                                mMap_x = mMid_x - mPre_x;
+//                                mMap_y = mMid_y - mPre_y;
+
                                 // remap
                                 Imgproc.remap(mMatHair, mMatHairNew, mMap_x, mMap_y, Imgproc
                                         .INTER_LINEAR, 0, new Scalar(0, 0, 0));
+//                                Imgproc.remap(mMatHair, mMatHairNew, mMap_x, mMap_y, Imgproc
+//                                        .CV_WARP_INVERSE_MAP, 0, new Scalar(0, 0, 0));
 
                                 final Bitmap _BitmapHairNew = Bitmap.createBitmap(mMatHairNew.cols(), mMatHairNew.rows(), Bitmap.Config.ARGB_8888);
                                 Utils.matToBitmap(mMatHairNew, _BitmapHairNew);
@@ -212,7 +268,7 @@ public class KaiOpenCV extends AppCompatActivity implements View.OnTouchListener
                                 mP.y = mQ.y;
 
                                 // reset mMatHair
-                                mMatHair = mMatHairNew;
+//                                mMatHair = mMatHairNew;
 
                                 // reset mPixels
 //                                for(int i = 0; i < mSize; i ++) {
@@ -248,31 +304,7 @@ public class KaiOpenCV extends AppCompatActivity implements View.OnTouchListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kai_open_cv);
 
-        mIvHair = (ImageView) findViewById(R.id.iv_hair);
-        mBitmapHair = BitmapFactory.decodeResource(getResources(), R.drawable.hair);
-        mLayoutImage = (RelativeLayout) findViewById(R.id.l_hair);
-        mHeight = mBitmapHair.getHeight();
-        mWidth = mBitmapHair.getWidth();
-        mBitmapHair = Bitmap.createScaledBitmap(mBitmapHair, (int) (mWidth * mScale), (int)
-                (mHeight * mScale), false);
-        mHeight = mBitmapHair.getHeight();
-        mWidth = mBitmapHair.getWidth();
-        mSize = mHeight * mWidth;
 
-        mPixels = new int[mSize];
-        mResPixels = new int[mSize];
-
-        mIvHair.setOnTouchListener(this);
-
-        mP = new Point();
-        mQ = new Point();
-        dP = new Point();
-
-        mIsWarping = false;
-        mHandler = new Handler();
-
-        //get image matrix
-        mBitmapHair.getPixels(mPixels, 0, mWidth, 0, 0, mWidth, mHeight);
 
     }
 
