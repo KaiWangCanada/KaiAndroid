@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import kai.kaiprivate.func.customview.UseLovelyView;
 import kai.kaiprivate.opencv.KaiOpenCV;
+import kai.kaiprivate.thirdparty.KaiPhotoGallary;
 import kai.kaiprivate.thirdparty.KaiPhotoView;
 import kai.kaiprivate.thirdparty.KaiPhotoViewB;
 import kai.kaiprivate.thirdparty.KaiPhotoViewPngAbove;

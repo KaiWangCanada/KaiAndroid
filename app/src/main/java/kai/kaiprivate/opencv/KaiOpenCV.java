@@ -201,6 +201,7 @@ public class KaiOpenCV extends AppCompatActivity implements View.OnTouchListener
                                     int j = k / mWidth;
                                     int i = k - j * mWidth;
                                     // todo: change .get && .put to array, make it faster
+
                                     // find midx, midy
                                     double midx = mMid_x.get(j, i)[0];
                                     double midy = mMid_y.get(j, i)[0];
@@ -255,6 +256,7 @@ public class KaiOpenCV extends AppCompatActivity implements View.OnTouchListener
 //                                mMap_y = mMid_y - mPre_y;
 
                                 // remap
+                                // todo: write our own remap, using alpha to reduce work
                                 Imgproc.remap(mMatHair, mMatHairNew, mMap_x, mMap_y, Imgproc
                                         .INTER_LINEAR, 0, new Scalar(0, 0, 0));
 //                                Imgproc.remap(mMatHair, mMatHairNew, mMap_x, mMap_y, Imgproc
