@@ -6,11 +6,13 @@ import android.os.Bundle;
 
 import kai.kaiprivate.func.customview.UseLovelyView;
 import kai.kaiprivate.opencv.KaiOpenCV;
+import kai.kaiprivate.thirdparty.KaiMultiImageSelectorActivity;
 import kai.kaiprivate.thirdparty.KaiPhotoGallary;
 import kai.kaiprivate.thirdparty.KaiPhotoView;
 import kai.kaiprivate.thirdparty.KaiPhotoViewB;
 import kai.kaiprivate.thirdparty.KaiPhotoViewPngAbove;
 import kai.kaiprivate.thirdparty.KaiPullToRefresh;
+import kai.kaiprivate.thirdparty.KaiUniversalImageLoader;
 
 public class MainActivity extends ActionBarActivity {
     private static final int RESULT = 0;
@@ -34,7 +36,8 @@ public class MainActivity extends ActionBarActivity {
 //        mClass = KaiPhotoView.class;
 //        mClass = KaiPhotoViewB.class;
 //        mClass = KaiPhotoViewPngAbove.class;
-        mClass = KaiOpenCV.class;
+//        mClass = KaiOpenCV.class;
+        mClass = KaiUniversalImageLoader.class;
 
         Intent intent = new Intent(MainActivity.this, mClass);
         startActivityForResult(intent, RESULT);
