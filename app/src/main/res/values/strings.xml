@@ -15,4 +15,5 @@
     <string name="title_activity_kai_photo_view_png_above">KaiPhotoViewPngAbove</string>
     <string name="title_activity_kai_open_cv">KaiOpenCV</string>
     <string name="title_activity_kai_universal_image_loader">KaiUniversalImageLoader</string>
+    <string name="title_activity_kai_ultra_pull_to_refresh">KaiUltraPullToRefresh</string>
 </resources>

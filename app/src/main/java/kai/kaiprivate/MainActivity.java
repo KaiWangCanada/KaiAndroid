@@ -12,6 +12,7 @@ import kai.kaiprivate.thirdparty.KaiPhotoView;
 import kai.kaiprivate.thirdparty.KaiPhotoViewB;
 import kai.kaiprivate.thirdparty.KaiPhotoViewPngAbove;
 import kai.kaiprivate.thirdparty.KaiPullToRefresh;
+import kai.kaiprivate.thirdparty.KaiUltraPullToRefresh;
 import kai.kaiprivate.thirdparty.KaiUniversalImageLoader;
 
 public class MainActivity extends ActionBarActivity {
@@ -37,7 +38,8 @@ public class MainActivity extends ActionBarActivity {
 //        mClass = KaiPhotoViewB.class;
 //        mClass = KaiPhotoViewPngAbove.class;
 //        mClass = KaiOpenCV.class;
-        mClass = KaiUniversalImageLoader.class;
+//        mClass = KaiUniversalImageLoader.class;
+        mClass = KaiUltraPullToRefresh.class;
 
         Intent intent = new Intent(MainActivity.this, mClass);
         startActivityForResult(intent, RESULT);

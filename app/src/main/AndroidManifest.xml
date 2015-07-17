@@ -64,6 +64,10 @@
             android:name=".thirdparty.KaiUniversalImageLoader"
             android:label="@string/title_activity_kai_universal_image_loader" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiUltraPullToRefresh"
+            android:label="@string/title_activity_kai_ultra_pull_to_refresh" >
+        </activity>
     </application>
 
 </manifest>
