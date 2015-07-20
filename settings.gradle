@@ -1,2 +1,3 @@
 include ':app', ':multi-image-selector', ':photogallery', ':tframework', ':xutils', ':stripe', ':Slidr', ':IndexListViewWithPinyin'
 include ':openCVLibrary300'
+include ':library'
