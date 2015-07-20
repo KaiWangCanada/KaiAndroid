@@ -29,9 +29,9 @@ import com.viewpagerindicator.CirclePageIndicator;
 import com.viewpagerindicator.UnderlinePageIndicator;
 
 import kai.kaiprivate.R;
+import uk.co.senab.photoview.PhotoViewAttacher;
 
 public class KaiUIL4MMF extends ActionBarActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +64,8 @@ public class KaiUIL4MMF extends ActionBarActivity {
         private LayoutInflater inflater;
         private DisplayImageOptions options;
 
+        private PhotoViewAttacher mAttacher;
+
         ImageAdapter(Context context) {
             inflater = LayoutInflater.from(context);
 
@@ -94,10 +96,17 @@ public class KaiUIL4MMF extends ActionBarActivity {
             View imageLayout = inflater.inflate(R.layout.item_pager_image, view, false);
             assert imageLayout != null;
             ImageView imageView = (ImageView) imageLayout.findViewById(R.id.image);
+            mAttacher = new PhotoViewAttacher(imageView);
             // set onclicklistener
-            imageView.setOnClickListener(new View.OnClickListener() {
+//            imageView.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    Log.v("kai", String.valueOf(position));
+//                }
+//            });
+            mAttacher.setOnViewTapListener(new PhotoViewAttacher.OnViewTapListener() {
                 @Override
-                public void onClick(View v) {
+                public void onViewTap(View view, float v, float v1) {
                     Log.v("kai", String.valueOf(position));
                 }
             });
