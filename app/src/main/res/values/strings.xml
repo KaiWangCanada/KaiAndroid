@@ -17,4 +17,5 @@
     <string name="title_activity_kai_universal_image_loader">KaiUniversalImageLoader</string>
     <string name="title_activity_kai_ultra_pull_to_refresh">KaiUltraPullToRefresh</string>
     <string name="title_activity_kai_uil4_mmf">KaiUIL4MMF</string>
+    <string name="title_activity_kai_gif">KaiGIF</string>
 </resources>

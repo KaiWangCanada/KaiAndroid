@@ -72,6 +72,10 @@
             android:name=".thirdparty.KaiUIL4MMF"
             android:label="@string/title_activity_kai_uil4_mmf" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiGIF"
+            android:label="@string/title_activity_kai_gif" >
+        </activity>
     </application>
 
 </manifest>
