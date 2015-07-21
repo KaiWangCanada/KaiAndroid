@@ -7,6 +7,7 @@ import android.os.Bundle;
 import kai.kaiprivate.func.customview.UseLovelyView;
 import kai.kaiprivate.opencv.KaiOpenCV;
 import kai.kaiprivate.thirdparty.KaiGIF;
+import kai.kaiprivate.thirdparty.KaiKenBurnView;
 import kai.kaiprivate.thirdparty.KaiMultiImageSelectorActivity;
 import kai.kaiprivate.thirdparty.KaiPhotoGallary;
 import kai.kaiprivate.thirdparty.KaiPhotoView;
@@ -43,7 +44,8 @@ public class MainActivity extends ActionBarActivity {
 //        mClass = KaiUniversalImageLoader.class;
 //        mClass = KaiUltraPullToRefresh.class;
 //        mClass = KaiUIL4MMF.class;
-        mClass = KaiGIF.class;
+//        mClass = KaiGIF.class;
+        mClass = KaiKenBurnView.class;
 
         Intent intent = new Intent(MainActivity.this, mClass);
         startActivityForResult(intent, RESULT);

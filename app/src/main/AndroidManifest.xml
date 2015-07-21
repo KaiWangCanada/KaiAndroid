@@ -76,6 +76,10 @@
             android:name=".thirdparty.KaiGIF"
             android:label="@string/title_activity_kai_gif" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiKenBurnView"
+            android:label="@string/title_activity_kai_ken_burn_view" >
+        </activity>
     </application>
 
 </manifest>
