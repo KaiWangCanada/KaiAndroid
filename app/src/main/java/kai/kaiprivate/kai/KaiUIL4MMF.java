@@ -1,4 +1,4 @@
-package kai.kaiprivate.thirdparty;
+package kai.kaiprivate.kai;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -9,8 +9,6 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -26,7 +24,6 @@ import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
 import com.unit.common.utils.LogOutputUtils;
 import com.viewpagerindicator.CirclePageIndicator;
-import com.viewpagerindicator.UnderlinePageIndicator;
 
 import kai.kaiprivate.R;
 import uk.co.senab.photoview.PhotoViewAttacher;

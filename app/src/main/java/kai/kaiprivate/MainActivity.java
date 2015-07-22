@@ -4,19 +4,8 @@ import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 
-import kai.kaiprivate.func.customview.UseLovelyView;
-import kai.kaiprivate.opencv.KaiOpenCV;
-import kai.kaiprivate.thirdparty.KaiGIF;
+import kai.kaiprivate.kai.KaiTextViewTimePicker4MMF;
 import kai.kaiprivate.thirdparty.KaiKenBurnView;
-import kai.kaiprivate.thirdparty.KaiMultiImageSelectorActivity;
-import kai.kaiprivate.thirdparty.KaiPhotoGallary;
-import kai.kaiprivate.thirdparty.KaiPhotoView;
-import kai.kaiprivate.thirdparty.KaiPhotoViewB;
-import kai.kaiprivate.thirdparty.KaiPhotoViewPngAbove;
-import kai.kaiprivate.thirdparty.KaiPullToRefresh;
-import kai.kaiprivate.thirdparty.KaiUIL4MMF;
-import kai.kaiprivate.thirdparty.KaiUltraPullToRefresh;
-import kai.kaiprivate.thirdparty.KaiUniversalImageLoader;
 
 public class MainActivity extends ActionBarActivity {
     private static final int RESULT = 0;
@@ -45,7 +34,8 @@ public class MainActivity extends ActionBarActivity {
 //        mClass = KaiUltraPullToRefresh.class;
 //        mClass = KaiUIL4MMF.class;
 //        mClass = KaiGIF.class;
-        mClass = KaiKenBurnView.class;
+//        mClass = KaiKenBurnView.class;
+        mClass = KaiTextViewTimePicker4MMF.class;
 
         Intent intent = new Intent(MainActivity.this, mClass);
         startActivityForResult(intent, RESULT);

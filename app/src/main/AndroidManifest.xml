@@ -69,7 +69,7 @@
             android:label="@string/title_activity_kai_ultra_pull_to_refresh" >
         </activity>
         <activity
-            android:name=".thirdparty.KaiUIL4MMF"
+            android:name=".kai.KaiUIL4MMF"
             android:label="@string/title_activity_kai_uil4_mmf" >
         </activity>
         <activity
@@ -79,6 +79,10 @@
         <activity
             android:name=".thirdparty.KaiKenBurnView"
             android:label="@string/title_activity_kai_ken_burn_view" >
+        </activity>
+        <activity
+            android:name=".kai.KaiTextViewTimePicker4MMF"
+            android:label="@string/title_activity_kai_text_view_time_picker4_mmf" >
         </activity>
     </application>
 
