@@ -7,6 +7,7 @@ import android.os.Bundle;
 import kai.kaiprivate.kai.KaiTextViewTimePicker4MMF;
 import kai.kaiprivate.kai.KaiUIL4MMF;
 import kai.kaiprivate.thirdparty.KaiBitmapUtils;
+import kai.kaiprivate.thirdparty.KaiColorArt;
 import kai.kaiprivate.thirdparty.KaiKenBurnView;
 
 public class MainActivity extends ActionBarActivity {
@@ -38,7 +39,8 @@ public class MainActivity extends ActionBarActivity {
 //        mClass = KaiGIF.class;
 //        mClass = KaiKenBurnView.class;
 //        mClass = KaiTextViewTimePicker4MMF.class;
-        mClass = KaiBitmapUtils.class;
+//        mClass = KaiBitmapUtils.class;
+        mClass = KaiColorArt.class;
 
         Intent intent = new Intent(MainActivity.this, mClass);
         startActivityForResult(intent, RESULT);

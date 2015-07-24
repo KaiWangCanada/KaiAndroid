@@ -88,6 +88,10 @@
             android:name=".thirdparty.KaiBitmapUtils"
             android:label="@string/title_activity_kai_bitmap_utils" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiColorArt"
+            android:label="@string/title_activity_kai_color_art" >
+        </activity>
     </application>
 
 </manifest>
