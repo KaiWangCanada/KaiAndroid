@@ -84,6 +84,10 @@
             android:name=".kai.KaiTextViewTimePicker4MMF"
             android:label="@string/title_activity_kai_text_view_time_picker4_mmf" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiBitmapUtils"
+            android:label="@string/title_activity_kai_bitmap_utils" >
+        </activity>
     </application>
 
 </manifest>
