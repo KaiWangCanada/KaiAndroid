@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:shrinkMode="strict">
+
+    <color name="main_bg">#f0f0f0</color>
+    <color name="common_primary">#f3f3f3</color>
+
+    <color name="avatar_change_select_bg">#f3f3f3</color>
+    <!-- 拍照上传图片 -->
+    <color name="pic_capture">#ffffff</color>
+    <color name="pic_cancel">#ffffff</color>
+    <color name="logout_red">#ffec584d</color>
+
+    <color name="bg_girl">#ff9194</color>
+    <color name="bg_boy">#5cc0e6</color>
+    <color name="price_green">#CA8D1E</color>
+
+    <color name="arrow_bg_normal">#ffffff</color>
+    <color name="arrow_bg_hover">#f3f3f3f3</color>
+
+    <!--分割线-->
+    <color name="divide_line">#a4a4a4</color>
+
+    <color name="time_line_pass">#6fb6d3</color>
+
+    <color name="pic_dialog_bg">#10000000</color>
+    <color name="dialog_background">#ddf3f3f3</color>
+    <color name="dialog_selector_item">#00abf3</color>
+
+    <color name="grid_bg">#ECEBE8</color>
+    <color name="text_selected">#DDDDDD</color>
+
+    <color name="toolbar">#2C2527</color>
+
+    <color name="split_line">#C2C2C2</color>
+    <!--一般有2个不同的text的色值的时候就是这2个了，116的色值和180的色值-->
+    <color name="second_text">#b4b4b4</color>
+    <color name="first_text">#747474</color>
+</resources>

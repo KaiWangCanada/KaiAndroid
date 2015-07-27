@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+  <integer name="VISIBLE">0x00000000</integer>
+  <integer name="INVISIBLE">0x00000004</integer>
+  <integer name="GONE">0x00000008</integer>
+
+  <integer name="age_visibility">@integer/VISIBLE</integer>
+
+</resources>

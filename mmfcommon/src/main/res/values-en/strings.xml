@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pull_to_refresh_start_label">Pull to refresh…</string>
+    <string name="pull_to_refresh_end_label">More…</string>
+    <string name="release_to_load_more">Release to load more…</string>
+    <string name="find_new_app_version">New Version Available(%1$s)</string>
+
+    <string name="request_confirm">request_confirm</string>
+    <string name="confirmed">confirmed</string>
+    <string name="canceled">cancelled</string>
+    <string name="completed">completed</string>
+    <string name="evaluated">evaluated</string>
+</resources>

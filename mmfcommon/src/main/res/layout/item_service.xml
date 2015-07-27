@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_10"
+    android:layout_margin="@dimen/divider_height"
+    android:gravity="center"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:src="@drawable/icon_head_default"
+        android:layout_marginRight="@dimen/padding_10"
+        android:layout_width="@dimen/service_icon_size"
+        android:layout_height="@dimen/service_icon_size" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|left"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/tv_service_name" style="@style/text_40_16sp" />
+        <TextView android:id="@+id/tv_salon_service_name" style="@style/text_120_16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:gravity="left|center"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:gravity="left"
+            android:id="@+id/tv_price"
+            style="@style/price_green" />
+
+        <TextView
+            android:gravity="left"
+            android:id="@+id/tv_original_price"
+            style="@style/text_120_16sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_service_arrow"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:src="@drawable/icon_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

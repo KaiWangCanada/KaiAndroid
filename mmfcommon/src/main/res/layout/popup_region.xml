@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/grid_bg"
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_10"
+        android:layout_height="wrap_content">
+
+        <com.mmfcommon.view.WrapContentGridView
+            android:id="@+id/grid_region"
+            android:numColumns="3"
+            android:gravity="center"
+            android:choiceMode="singleChoice"
+            android:verticalSpacing="@dimen/padding_10"
+            android:horizontalSpacing="@dimen/padding_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:padding="10dip"
+            android:id="@+id/region_change_layout"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="14dip"
+            android:layout_marginBottom="5dip"
+            android:background="@drawable/item_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/current_city"
+                style="@style/text_120_16sp" />
+            <TextView
+                android:id="@+id/tv_current_city"
+                android:text="@string/default_loading"
+                android:layout_weight="1"
+                style="@style/text_120_16sp" />
+            <TextView
+                android:text="@string/change"
+                style="@style/text_120_16sp" />
+            <ImageView
+                android:paddingLeft="10dip"
+                android:src="@drawable/icon_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <View
+        android:id="@+id/popup_shadow"
+        android:layout_weight="1"
+        android:background="#80808080"
+        android:layout_width="match_parent"
+        android:layout_height="0dip" />
+
+</LinearLayout>

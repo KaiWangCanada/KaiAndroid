@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:shrinkMode="strict">
+    <string-array name="appoint_tab_name">
+        <item>@string/request_confirm</item>
+        <item>@string/confirmed</item>
+        <item>@string/canceled</item>
+        <item>@string/completed</item>
+    </string-array>
+</resources>

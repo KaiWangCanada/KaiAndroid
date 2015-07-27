@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:shrinkMode="strict">
+    <dimen name="tab_height">46dp</dimen>
+    <dimen name="tab_press_padding_bottom">45dip</dimen>
+
+    <dimen name="activity_margin">16dp</dimen>
+
+    <dimen name="salon_service_draw_padding">3dp</dimen>
+    <!--发型师的多个服务之间的间距-->
+    <dimen name="service_margin">8dp</dimen>
+    <dimen name="divider_height">0.5dip</dimen>
+    <dimen name="item_stylist_avatar_size">60dip</dimen>
+    <dimen name="work_image_size">80dip</dimen>
+    <dimen name="home_stylist_avatar_size">80dip</dimen>
+
+    <dimen name="service_icon_size">50dip</dimen>
+
+    <dimen name="no_data_margin">18dp</dimen>
+
+    <!--小图标和文字之间的间距-->
+    <dimen name="text_padding_icon">8dp</dimen>
+
+</resources>
