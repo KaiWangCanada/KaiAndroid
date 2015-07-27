@@ -22,4 +22,5 @@
     <string name="title_activity_kai_text_view_time_picker4_mmf">KaiTextViewTimePicker4MMF</string>
     <string name="title_activity_kai_bitmap_utils">KaiBitmapUtils</string>
     <string name="title_activity_kai_color_art">KaiColorArt</string>
+    <string name="title_activity_kai_http_utils">KaiHttpUtils</string>
 </resources>

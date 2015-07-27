@@ -92,6 +92,10 @@
             android:name=".thirdparty.KaiColorArt"
             android:label="@string/title_activity_kai_color_art" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiHttpUtils"
+            android:label="@string/title_activity_kai_http_utils" >
+        </activity>
     </application>
 
 </manifest>
