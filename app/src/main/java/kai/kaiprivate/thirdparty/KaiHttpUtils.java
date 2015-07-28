@@ -15,6 +15,8 @@ import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.lidroid.xutils.http.client.HttpRequest;
 
+import java.util.List;
+
 import kai.kaiprivate.R;
 
 public class KaiHttpUtils extends ActionBarActivity {
@@ -56,10 +58,10 @@ public class KaiHttpUtils extends ActionBarActivity {
 
     public class Restaurants {
         @SerializedName("items")
-        private Restaurant[] items;
+        private List<Restaurant> items;
 
         public Restaurant getRestaurant(int position) {
-            return items[position];
+            return items.get(position);
         }
     }
 
