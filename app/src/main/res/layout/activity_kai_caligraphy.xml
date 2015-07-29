@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                style="@style/ll_verticle"
+                tools:ignore="MissingPrefix"
+                tools:context="kai.kaiprivate.thirdparty.KaiCaligraphy">
+
+    <TextView
+        android:text="@string/hello_world"
+        android:gravity="center"
+        android:textSize="60sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        fontPath="fonts/SouthernAire.ttf"/>
+
+</RelativeLayout>

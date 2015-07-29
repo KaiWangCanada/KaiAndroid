@@ -100,6 +100,10 @@
             android:name=".thirdparty.KaiAndroidBootStrap"
             android:label="@string/title_activity_kai_android_boot_strap" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiCaligraphy"
+            android:label="@string/title_activity_kai_caligraphy" >
+        </activity>
     </application>
 
 </manifest>

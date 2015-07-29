@@ -24,4 +24,5 @@
     <string name="title_activity_kai_color_art">KaiColorArt</string>
     <string name="title_activity_kai_http_utils">KaiHttpUtils</string>
     <string name="title_activity_kai_android_boot_strap">KaiAndroidBootStrap</string>
+    <string name="title_activity_kai_caligraphy">KaiCaligraphy</string>
 </resources>

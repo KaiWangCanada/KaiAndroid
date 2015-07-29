@@ -8,6 +8,7 @@ import kai.kaiprivate.kai.KaiTextViewTimePicker4MMF;
 import kai.kaiprivate.kai.KaiUIL4MMF;
 import kai.kaiprivate.thirdparty.KaiAndroidBootStrap;
 import kai.kaiprivate.thirdparty.KaiBitmapUtils;
+import kai.kaiprivate.thirdparty.KaiCaligraphy;
 import kai.kaiprivate.thirdparty.KaiColorArt;
 import kai.kaiprivate.thirdparty.KaiHttpUtils;
 import kai.kaiprivate.thirdparty.KaiKenBurnView;
@@ -44,7 +45,8 @@ public class MainActivity extends ActionBarActivity {
 //        mClass = KaiBitmapUtils.class;
 //        mClass = KaiColorArt.class;
 //        mClass = KaiHttpUtils.class;
-        mClass = KaiAndroidBootStrap.class;
+//        mClass = KaiAndroidBootStrap.class;
+        mClass = KaiCaligraphy.class;
 
         Intent intent = new Intent(MainActivity.this, mClass);
         startActivityForResult(intent, RESULT);
