@@ -34,4 +34,5 @@ dependencies {
     compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.7'
     compile 'com.flaviofaria:kenburnsview:1.0.6'
     compile 'org.michaelevans.colorart:library:0.0.3'
+    compile 'com.beardedhen:androidbootstrap:1.2.3'
 }

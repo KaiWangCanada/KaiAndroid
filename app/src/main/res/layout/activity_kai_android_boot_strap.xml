@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+                style="@style/ll_verticle"
+                tools:context="kai.kaiprivate.thirdparty.KaiAndroidBootStrap">
+
+    <!-- basic button -->
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Success"
+        android:textSize="40sp"
+        bootstrap:bb_icon_left="fa-anchor"
+        bootstrap:bb_icon_right="fa-android"
+        bootstrap:bb_type="success"
+        />
+
+    <!-- rounded edit text -->
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/txtOne"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="rounded"
+        bootstrap:be_roundedCorners="true"
+        android:gravity="center"
+        bootstrap:be_state="success"
+        />
+
+    <!-- Square Thumbnail with Image -->
+    <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+        android:id="@+id/thumbnailOneTest"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        bootstrap:bct_image="@drawable/droid"
+        bootstrap:bct_size="xlarge"/>
+
+    <!-- basic text-->
+    <com.beardedhen.androidbootstrap.FontAwesomeText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblOne"
+        bootstrap:fa_icon="fa-github"
+        android:layout_margin="10dp"
+        android:textSize="32sp"
+        />
+
+    <com.beardedhen.androidbootstrap.FontAwesomeText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblTwo"
+        bootstrap:fa_icon="fa-github"
+        android:layout_margin="10dp"
+        android:textSize="32sp"
+        />
+
+    <com.beardedhen.androidbootstrap.FontAwesomeText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblThree"
+        bootstrap:fa_icon="fa-github"
+        android:layout_margin="10dp"
+        android:textSize="32sp"
+        />
+
+</LinearLayout>

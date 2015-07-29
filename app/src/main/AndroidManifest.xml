@@ -96,6 +96,10 @@
             android:name=".thirdparty.KaiHttpUtils"
             android:label="@string/title_activity_kai_http_utils" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiAndroidBootStrap"
+            android:label="@string/title_activity_kai_android_boot_strap" >
+        </activity>
     </application>
 
 </manifest>

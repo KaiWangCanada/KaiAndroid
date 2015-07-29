@@ -1,8 +1,17 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:shrinkMode="strict">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+    </style>
+
+    <!-- standard linear layout -->
+    <style name="ll_verticle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
     </style>
 
 </resources>
