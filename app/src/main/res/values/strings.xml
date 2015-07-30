@@ -25,4 +25,6 @@
     <string name="title_activity_kai_http_utils">KaiHttpUtils</string>
     <string name="title_activity_kai_android_boot_strap">KaiAndroidBootStrap</string>
     <string name="title_activity_kai_caligraphy">KaiCaligraphy</string>
+    <string name="title_activity_kai_gmap_utils">KaiGMapUtils</string>
+    <string name="title_activity_base_gmap">BaseGMapActivity</string>
 </resources>

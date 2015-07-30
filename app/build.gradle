@@ -36,4 +36,5 @@ dependencies {
     compile 'org.michaelevans.colorart:library:0.0.3'
     compile 'com.beardedhen:androidbootstrap:1.2.3'
     compile 'uk.co.chrisjenx:calligraphy:2.1.0'
+    compile 'com.google.maps.android:android-maps-utils:0.4'
 }

@@ -1,39 +1,50 @@
 package kai.kaiprivate.thirdparty.gmaputils;
 
-import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.util.Log;
+import android.widget.Toast;
+
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.maps.android.clustering.Cluster;
+import com.google.maps.android.clustering.ClusterManager;
+
+import org.json.JSONException;
+
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 import kai.kaiprivate.R;
 
-public class KaiGMapUtils extends ActionBarActivity {
+/**
+ * Simple activity demonstrating ClusterManager.
+ */
+public class KaiGMapUtils extends BaseGMapActivity {
+    private ClusterManager<GMapItem> mClusterManager;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kai_gmap_utils);
-    }
+    protected void startDemo() {
+        getMap().moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(0, 0), 10));
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_kai_gmap_utils, menu);
-        return true;
-    }
+        mClusterManager = new ClusterManager<GMapItem>(this, getMap());
+        getMap().setOnCameraChangeListener(mClusterManager);
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        try {
+            readItems();
+        } catch (JSONException e) {
+            Toast.makeText(this, "Problem reading list of markers.", Toast.LENGTH_LONG).show();
         }
+    }
 
-        return super.onOptionsItemSelected(item);
+    private void readItems() throws JSONException {
+        ArrayList<GMapItem> items = new ArrayList<GMapItem>();
+        GMapItem gMapItem;
+        for(int i = 0; i < 20; i++) {
+            gMapItem = new GMapItem(0, i);
+            Log.v("kai", String.valueOf(gMapItem.getPosition()));
+//            items.add(new GMapItem(0, i));
+            items.add(gMapItem);
+        }
+        mClusterManager.addItems(items);
     }
 }

@@ -12,6 +12,7 @@ import kai.kaiprivate.thirdparty.KaiCaligraphy;
 import kai.kaiprivate.thirdparty.KaiColorArt;
 import kai.kaiprivate.thirdparty.KaiHttpUtils;
 import kai.kaiprivate.thirdparty.KaiKenBurnView;
+import kai.kaiprivate.thirdparty.gmaputils.KaiGMapUtils;
 
 public class MainActivity extends ActionBarActivity {
     private static final int RESULT = 0;
@@ -45,8 +46,9 @@ public class MainActivity extends ActionBarActivity {
 //        mClass = KaiBitmapUtils.class;
 //        mClass = KaiColorArt.class;
 //        mClass = KaiHttpUtils.class;
-        mClass = KaiAndroidBootStrap.class;
+//        mClass = KaiAndroidBootStrap.class;
 //        mClass = KaiCaligraphy.class;
+        mClass = KaiGMapUtils.class;
 
         Intent intent = new Intent(MainActivity.this, mClass);
         startActivityForResult(intent, RESULT);

@@ -1,7 +1,18 @@
 package kai.kaiprivate.thirdparty.gmaputils;
 
-/**
- * Created by Administrator on 2015/7/30.
- */
-public class GMapItem {
+import com.google.android.gms.maps.model.LatLng;
+import com.google.maps.android.clustering.ClusterItem;
+
+public class GMapItem implements ClusterItem {
+    private final LatLng mPosition;
+
+    public GMapItem(double lat, double lng) {
+        mPosition = new LatLng(lat, lng);
+    }
+
+    @Override
+    public LatLng getPosition() {
+        return mPosition;
+    }
 }
+
