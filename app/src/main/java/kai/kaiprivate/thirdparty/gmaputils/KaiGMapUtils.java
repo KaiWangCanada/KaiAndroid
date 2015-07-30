@@ -38,12 +38,9 @@ public class KaiGMapUtils extends BaseGMapActivity {
 
     private void readItems() throws JSONException {
         ArrayList<GMapItem> items = new ArrayList<GMapItem>();
-        GMapItem gMapItem;
         for(int i = 0; i < 20; i++) {
-            gMapItem = new GMapItem(0, i);
-            Log.v("kai", String.valueOf(gMapItem.getPosition()));
-//            items.add(new GMapItem(0, i));
-            items.add(gMapItem);
+            items.add(new GMapItem(0, i));
+//            Log.v("kai", String.valueOf(gMapItem.getPosition()));
         }
         mClusterManager.addItems(items);
     }

@@ -13,6 +13,7 @@ import kai.kaiprivate.thirdparty.KaiColorArt;
 import kai.kaiprivate.thirdparty.KaiHttpUtils;
 import kai.kaiprivate.thirdparty.KaiKenBurnView;
 import kai.kaiprivate.thirdparty.gmaputils.KaiGMapUtils;
+import kai.kaiprivate.thirdparty.gmaputils.KaiGMapUtilsCustomMarker;
 
 public class MainActivity extends ActionBarActivity {
     private static final int RESULT = 0;
@@ -48,7 +49,8 @@ public class MainActivity extends ActionBarActivity {
 //        mClass = KaiHttpUtils.class;
 //        mClass = KaiAndroidBootStrap.class;
 //        mClass = KaiCaligraphy.class;
-        mClass = KaiGMapUtils.class;
+//        mClass = KaiGMapUtils.class;
+        mClass = KaiGMapUtilsCustomMarker.class;
 
         Intent intent = new Intent(MainActivity.this, mClass);
         startActivityForResult(intent, RESULT);
