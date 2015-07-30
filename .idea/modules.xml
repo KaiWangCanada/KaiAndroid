@@ -4,21 +4,14 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/IndexListViewWithPinyin/IndexListViewWithPinyin.iml" filepath="$PROJECT_DIR$/IndexListViewWithPinyin/IndexListViewWithPinyin.iml" />
       <module fileurl="file://$PROJECT_DIR$/KaiAndroid.iml" filepath="$PROJECT_DIR$/KaiAndroid.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PullToRefresh/PullToRefresh.iml" filepath="$PROJECT_DIR$/PullToRefresh/PullToRefresh.iml" />
       <module fileurl="file://$PROJECT_DIR$/Slidr/Slidr.iml" filepath="$PROJECT_DIR$/Slidr/Slidr.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ViewPagerIndicatorLibrary/ViewPagerIndicatorLibrary.iml" filepath="$PROJECT_DIR$/ViewPagerIndicatorLibrary/ViewPagerIndicatorLibrary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/amap_lib/amap_lib.iml" filepath="$PROJECT_DIR$/amap_lib/amap_lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/mmfbase/mmfbase.iml" filepath="$PROJECT_DIR$/mmfbase/mmfbase.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mmfcommon/mmfcommon.iml" filepath="$PROJECT_DIR$/mmfcommon/mmfcommon.iml" />
       <module fileurl="file://$PROJECT_DIR$/multi-image-selector/multi-image-selector.iml" filepath="$PROJECT_DIR$/multi-image-selector/multi-image-selector.iml" />
-      <module fileurl="file://$PROJECT_DIR$/onekeyshare/onekeyshare.iml" filepath="$PROJECT_DIR$/onekeyshare/onekeyshare.iml" />
       <module fileurl="file://$PROJECT_DIR$/openCVLibrary300/openCVLibrary300.iml" filepath="$PROJECT_DIR$/openCVLibrary300/openCVLibrary300.iml" />
       <module fileurl="file://$PROJECT_DIR$/photogallery/photogallery.iml" filepath="$PROJECT_DIR$/photogallery/photogallery.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sharesdk/sharesdk.iml" filepath="$PROJECT_DIR$/sharesdk/sharesdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/stripe/stripe.iml" filepath="$PROJECT_DIR$/stripe/stripe.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sweetalert/sweetalert.iml" filepath="$PROJECT_DIR$/sweetalert/sweetalert.iml" />
       <module fileurl="file://$PROJECT_DIR$/tframework/tframework.iml" filepath="$PROJECT_DIR$/tframework/tframework.iml" />
       <module fileurl="file://$PROJECT_DIR$/xutils/xutils.iml" filepath="$PROJECT_DIR$/xutils/xutils.iml" />
     </modules>

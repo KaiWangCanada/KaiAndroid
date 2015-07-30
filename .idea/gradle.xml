@@ -10,21 +10,14 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/IndexListViewWithPinyin" />
-            <option value="$PROJECT_DIR$/PullToRefresh" />
             <option value="$PROJECT_DIR$/Slidr" />
-            <option value="$PROJECT_DIR$/ViewPagerIndicatorLibrary" />
-            <option value="$PROJECT_DIR$/amap_lib" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/library" />
             <option value="$PROJECT_DIR$/mmfbase" />
-            <option value="$PROJECT_DIR$/mmfcommon" />
             <option value="$PROJECT_DIR$/multi-image-selector" />
-            <option value="$PROJECT_DIR$/onekeyshare" />
             <option value="$PROJECT_DIR$/openCVLibrary300" />
             <option value="$PROJECT_DIR$/photogallery" />
-            <option value="$PROJECT_DIR$/sharesdk" />
             <option value="$PROJECT_DIR$/stripe" />
-            <option value="$PROJECT_DIR$/sweetalert" />
             <option value="$PROJECT_DIR$/tframework" />
             <option value="$PROJECT_DIR$/xutils" />
           </set>

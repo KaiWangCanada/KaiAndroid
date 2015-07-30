@@ -45,8 +45,8 @@ public class MainActivity extends ActionBarActivity {
 //        mClass = KaiBitmapUtils.class;
 //        mClass = KaiColorArt.class;
 //        mClass = KaiHttpUtils.class;
-//        mClass = KaiAndroidBootStrap.class;
-        mClass = KaiCaligraphy.class;
+        mClass = KaiAndroidBootStrap.class;
+//        mClass = KaiCaligraphy.class;
 
         Intent intent = new Intent(MainActivity.this, mClass);
         startActivityForResult(intent, RESULT);
