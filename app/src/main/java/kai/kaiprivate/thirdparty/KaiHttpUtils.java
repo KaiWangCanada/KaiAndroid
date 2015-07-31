@@ -38,7 +38,7 @@ public class KaiHttpUtils extends ActionBarActivity {
 
                     @Override
                     public void onSuccess(ResponseInfo<String> responseInfo) {
-                        Log.v("kai", responseInfo.result);
+                        Log.v("kai", "result: " + responseInfo.result);
 
                         // Gson
                         Gson gson = new Gson();

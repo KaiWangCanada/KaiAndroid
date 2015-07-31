@@ -2,6 +2,7 @@ package kai.kaiprivate.thirdparty.gmaputils;
 
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -55,6 +56,7 @@ public class KaiGMapUtilsCustomMarker extends BaseGMapActivity implements Cluste
             mIconGenerator.setContentView(mImageView);
         }
 
+        // set marker here: icon, title
         @Override
         protected void onBeforeClusterItemRendered(Person person, MarkerOptions markerOptions) {
             // Draw a single person.
@@ -64,6 +66,7 @@ public class KaiGMapUtilsCustomMarker extends BaseGMapActivity implements Cluste
             markerOptions.icon(BitmapDescriptorFactory.fromBitmap(icon)).title(person.name);
         }
 
+        // set clustered icon here
         @Override
         protected void onBeforeClusterRendered(Cluster<Person> cluster, MarkerOptions markerOptions) {
             // Draw multiple people.
@@ -105,21 +108,24 @@ public class KaiGMapUtilsCustomMarker extends BaseGMapActivity implements Cluste
     @Override
     public void onClusterInfoWindowClick(Cluster<Person> cluster) {
         // Does nothing, but you could go to a list of the users.
+        Log.v("kai", "onClusterInfoWindowClick");
     }
 
     @Override
     public boolean onClusterItemClick(Person item) {
         // Does nothing, but you could go into the user's profile page, for example.
+        Log.v("kai", "onClusterItemClick");
         return false;
     }
 
     @Override
     public void onClusterItemInfoWindowClick(Person item) {
         // Does nothing, but you could go into the user's profile page, for example.
+        Log.v("kai", "onClusterItemInfoWindowClick");
     }
 
     @Override
-    protected void startDemo() {
+    protected void startGMap() {
         getMap().moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(51.503186, -0.126446), 9.5f));
 
         mClusterManager = new ClusterManager<Person>(this, getMap());

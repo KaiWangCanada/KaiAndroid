@@ -23,7 +23,7 @@ public class KaiGMapUtils extends BaseGMapActivity {
     private ClusterManager<GMapItem> mClusterManager;
 
     @Override
-    protected void startDemo() {
+    protected void startGMap() {
         getMap().moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(0, 0), 10));
 
         mClusterManager = new ClusterManager<GMapItem>(this, getMap());

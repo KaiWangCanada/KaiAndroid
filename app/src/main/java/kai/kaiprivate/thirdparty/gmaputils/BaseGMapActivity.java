@@ -33,14 +33,14 @@ public abstract class BaseGMapActivity extends FragmentActivity {
         }
         mMap = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map)).getMap();
         if (mMap != null) {
-            startDemo();
+            startGMap();
         }
     }
 
     /**
      * Run the demo-specific code.
      */
-    protected abstract void startDemo();
+    protected abstract void startGMap();
 
     protected GoogleMap getMap() {
         setUpMapIfNeeded();
