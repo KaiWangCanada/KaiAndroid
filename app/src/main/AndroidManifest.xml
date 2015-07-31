@@ -125,10 +125,6 @@
             android:label="@string/title_activity_kai_gmap_utils" >
         </activity>
         <activity
-            android:name=".thirdparty.gmaputils.BaseGMapActivity"
-            android:label="@string/title_activity_base_gmap" >
-        </activity>
-        <activity
             android:name=".thirdparty.gmaputils.KaiGMapUtilsCustomMarker"
             android:label="@string/title_activity_base_gmap" >
         </activity>
