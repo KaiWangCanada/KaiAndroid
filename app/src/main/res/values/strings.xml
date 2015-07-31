@@ -27,4 +27,5 @@
     <string name="title_activity_kai_caligraphy">KaiCaligraphy</string>
     <string name="title_activity_kai_gmap_utils">KaiGMapUtils</string>
     <string name="title_activity_base_gmap">BaseGMapActivity</string>
+    <string name="title_activity_kai_observer">KaiObserver</string>
 </resources>

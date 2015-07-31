@@ -128,7 +128,10 @@
             android:name=".thirdparty.gmaputils.KaiGMapUtilsCustomMarker"
             android:label="@string/title_activity_base_gmap" >
         </activity>
-
+        <activity
+            android:name=".pattern.observer.KaiObserver"
+            android:label="@string/title_activity_kai_observer" >
+        </activity>
     </application>
 
 </manifest>

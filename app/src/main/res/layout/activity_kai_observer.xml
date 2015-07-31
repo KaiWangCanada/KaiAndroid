@@ -1,0 +1,12 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                style="@style/ll_verticle"
+                tools:context="kai.kaiprivate.pattern.observer.KaiObserver">
+
+    <Button
+        android:text="@string/hello_world"
+        android:onClick="click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
