@@ -34,7 +34,7 @@ public class KaiGMapUtils extends BaseGMapActivity {
         @Override
         protected void onBeforeClusterItemRendered(GMapItem item, MarkerOptions markerOptions) {
 //            super.onBeforeClusterItemRendered(item, markerOptions);
-            markerOptions.title(item.toString());
+            markerOptions.title(String.valueOf(item.getPosition()));
         }
     }
 
@@ -52,16 +52,12 @@ public class KaiGMapUtils extends BaseGMapActivity {
 
 //        mClusterManager.setOnClusterItemClickListener(this);
 
-        try {
-            readItems();
-        } catch (JSONException e) {
-            Toast.makeText(this, "Problem reading list of markers.", Toast.LENGTH_LONG).show();
-        }
+        readItems();
 
         mClusterManager.cluster();
     }
 
-    private void readItems() throws JSONException {
+    private void readItems() {
         ArrayList<GMapItem> items = new ArrayList<GMapItem>();
         for(int i = 0; i < 20; i++) {
             items.add(new GMapItem(0, i));
