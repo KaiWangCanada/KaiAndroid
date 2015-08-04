@@ -13,6 +13,7 @@ import kai.kaiprivate.thirdparty.KaiCaligraphy;
 import kai.kaiprivate.thirdparty.KaiColorArt;
 import kai.kaiprivate.thirdparty.KaiHttpUtils;
 import kai.kaiprivate.thirdparty.KaiKenBurnView;
+import kai.kaiprivate.thirdparty.discrollview.KaiDiscroll;
 import kai.kaiprivate.thirdparty.gmaputils.KaiGMapUtils;
 import kai.kaiprivate.thirdparty.gmaputils.KaiGMapUtilsCustomMarker;
 
@@ -51,8 +52,9 @@ public class MainActivity extends ActionBarActivity {
 //        mClass = KaiAndroidBootStrap.class;
 //        mClass = KaiCaligraphy.class;
 //        mClass = KaiGMapUtils.class;
-        mClass = KaiGMapUtilsCustomMarker.class;
+//        mClass = KaiGMapUtilsCustomMarker.class;
 //        mClass = KaiObserver.class;
+        mClass = KaiDiscroll.class;
 
         Intent intent = new Intent(MainActivity.this, mClass);
         startActivityForResult(intent, RESULT);

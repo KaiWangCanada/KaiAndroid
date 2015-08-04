@@ -132,6 +132,10 @@
             android:name=".pattern.observer.KaiObserver"
             android:label="@string/title_activity_kai_observer" >
         </activity>
+        <activity
+            android:name=".thirdparty.discrollview.KaiDiscroll"
+            android:label="@string/title_activity_kai_observer" >
+        </activity>
     </application>
 
 </manifest>
