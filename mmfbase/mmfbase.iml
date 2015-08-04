@@ -93,11 +93,11 @@
     <orderEntry type="library" exported="" name="gson-2.2.4" level="project" />
     <orderEntry type="library" exported="" name="pinyin4j-2.5.0" level="project" />
     <orderEntry type="library" exported="" name="asyncjob-library-1.0.3" level="project" />
-    <orderEntry type="library" exported="" name="android-agent-4.273.4" level="project" />
     <orderEntry type="library" exported="" name="systembartint-1.0.3" level="project" />
+    <orderEntry type="library" exported="" name="android-agent-4.273.4" level="project" />
     <orderEntry type="library" exported="" name="baidu_api_3_5" level="project" />
-    <orderEntry type="library" exported="" name="support-annotations-22.0.0" level="project" />
     <orderEntry type="library" exported="" name="stripe-java-1.15.1" level="project" />
+    <orderEntry type="library" exported="" name="support-annotations-22.0.0" level="project" />
     <orderEntry type="module" module-name="tframework" exported="" />
   </component>
 </module>

@@ -1,7 +1,7 @@
 package kai.kaiprivate.pattern.observer;
 
 /**
- * Created by Administrator on 2015/7/31.
+ * Created by Kai on 2015/7/31.
  */
 public class SyncUpdateMessage {
     // message codes

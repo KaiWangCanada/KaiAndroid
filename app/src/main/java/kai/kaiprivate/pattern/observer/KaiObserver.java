@@ -75,6 +75,6 @@ public class KaiObserver extends Activity implements Observer {
 
     public void click(View view) {
         Log.v("kai", "click");
-        SyncManager.getInstance().sync("null", "null", 3);
+        SyncManager.getInstance().sync("kai2", "null", 3);
     }
 }

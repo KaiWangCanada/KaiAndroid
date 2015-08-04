@@ -5,8 +5,10 @@ import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.maps.android.clustering.Cluster;
 import com.google.maps.android.clustering.ClusterManager;
+import com.google.maps.android.clustering.view.DefaultClusterRenderer;
 
 import org.json.JSONException;
 
@@ -22,18 +24,41 @@ import kai.kaiprivate.R;
 public class KaiGMapUtils extends BaseGMapActivity {
     private ClusterManager<GMapItem> mClusterManager;
 
+    // ItemRenderer
+    public class ItemRenderer extends DefaultClusterRenderer<GMapItem> {
+
+        public ItemRenderer() {
+            super(getApplicationContext(), getMap(), mClusterManager);
+        }
+
+        @Override
+        protected void onBeforeClusterItemRendered(GMapItem item, MarkerOptions markerOptions) {
+//            super.onBeforeClusterItemRendered(item, markerOptions);
+            markerOptions.title(item.toString());
+        }
+    }
+
     @Override
     protected void startGMap() {
         getMap().moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(0, 0), 10));
 
+        // set manager, renderer
         mClusterManager = new ClusterManager<GMapItem>(this, getMap());
+        mClusterManager.setRenderer(new ItemRenderer());
+
+        // set listener
         getMap().setOnCameraChangeListener(mClusterManager);
+        getMap().setOnMarkerClickListener(mClusterManager);
+
+//        mClusterManager.setOnClusterItemClickListener(this);
 
         try {
             readItems();
         } catch (JSONException e) {
             Toast.makeText(this, "Problem reading list of markers.", Toast.LENGTH_LONG).show();
         }
+
+        mClusterManager.cluster();
     }
 
     private void readItems() throws JSONException {

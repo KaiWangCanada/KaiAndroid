@@ -50,9 +50,9 @@ public class MainActivity extends ActionBarActivity {
 //        mClass = KaiHttpUtils.class;
 //        mClass = KaiAndroidBootStrap.class;
 //        mClass = KaiCaligraphy.class;
-//        mClass = KaiGMapUtils.class;
+        mClass = KaiGMapUtils.class;
 //        mClass = KaiGMapUtilsCustomMarker.class;
-        mClass = KaiObserver.class;
+//        mClass = KaiObserver.class;
 
         Intent intent = new Intent(MainActivity.this, mClass);
         startActivityForResult(intent, RESULT);

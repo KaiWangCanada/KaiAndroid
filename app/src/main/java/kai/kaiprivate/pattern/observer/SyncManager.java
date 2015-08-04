@@ -4,6 +4,7 @@ import java.util.Observable;
 
 public class SyncManager extends Observable {
 
+    // use instance, so you don't need to create an instance yourself
     private static SyncManager instance = new SyncManager();
 
     public static SyncManager getInstance() {
@@ -40,7 +41,7 @@ public class SyncManager extends Observable {
 
 //                Note note = databaseManager.getNote(String param1);
 //                String result = NoteUploader.uploadNote(note);
-                String result = "kai";
+                String result = param1;
 
                 setChanged();
                 notifyObservers(new SyncUpdateMessage(

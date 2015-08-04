@@ -34,6 +34,7 @@ public class KaiGMapUtilsCustomMarker extends BaseGMapActivity implements Cluste
      * Draws profile photos inside markers (using IconGenerator).
      * When there are multiple people in the cluster, draw multiple photos (using MultiDrawable).
      */
+
     private class PersonRenderer extends DefaultClusterRenderer<Person> {
         private final IconGenerator mIconGenerator = new IconGenerator(getApplicationContext());
         private final IconGenerator mClusterIconGenerator = new IconGenerator(getApplicationContext());
@@ -44,12 +45,13 @@ public class KaiGMapUtilsCustomMarker extends BaseGMapActivity implements Cluste
         public PersonRenderer() {
             super(getApplicationContext(), getMap(), mClusterManager);
 
+            // marker layout
             View multiProfile = getLayoutInflater().inflate(R.layout.gmaputils_multi_profile, null);
             mClusterIconGenerator.setContentView(multiProfile);
             mClusterImageView = (ImageView) multiProfile.findViewById(R.id.image);
 
             mImageView = new ImageView(getApplicationContext());
-            mDimension = 50;
+            mDimension = 150;
             mImageView.setLayoutParams(new ViewGroup.LayoutParams(mDimension, mDimension));
             int padding = 2;
             mImageView.setPadding(padding, padding, padding, padding);
@@ -60,7 +62,7 @@ public class KaiGMapUtilsCustomMarker extends BaseGMapActivity implements Cluste
         @Override
         protected void onBeforeClusterItemRendered(Person person, MarkerOptions markerOptions) {
             // Draw a single person.
-            // Set the info window to show their name.
+            // Set the info window to show their name (extra info).
             mImageView.setImageResource(person.profilePhoto);
             Bitmap icon = mIconGenerator.makeIcon();
             markerOptions.icon(BitmapDescriptorFactory.fromBitmap(icon)).title(person.name);
@@ -97,6 +99,7 @@ public class KaiGMapUtilsCustomMarker extends BaseGMapActivity implements Cluste
         }
     }
 
+    // next 4: onClickListener
     @Override
     public boolean onClusterClick(Cluster<Person> cluster) {
         // Show a toast with some info when the cluster is clicked.
@@ -128,8 +131,11 @@ public class KaiGMapUtilsCustomMarker extends BaseGMapActivity implements Cluste
     protected void startGMap() {
         getMap().moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(51.503186, -0.126446), 9.5f));
 
+        // key: set Manager, Renderer
         mClusterManager = new ClusterManager<Person>(this, getMap());
         mClusterManager.setRenderer(new PersonRenderer());
+
+        // next7: set onClickListener
         getMap().setOnCameraChangeListener(mClusterManager);
         getMap().setOnMarkerClickListener(mClusterManager);
         getMap().setOnInfoWindowClickListener(mClusterManager);
@@ -138,37 +144,41 @@ public class KaiGMapUtilsCustomMarker extends BaseGMapActivity implements Cluste
         mClusterManager.setOnClusterItemClickListener(this);
         mClusterManager.setOnClusterItemInfoWindowClickListener(this);
 
+        // add items to Manager
         addItems();
+
+        // start cluster
         mClusterManager.cluster();
     }
 
+    // add items to Manager
     private void addItems() {
         // http://www.flickr.com/photos/sdasmarchives/5036248203/
-        mClusterManager.addItem(new Person(position(), "Walter", R.drawable.droid));
+        mClusterManager.addItem(new Person(position(), "Walter", R.drawable.s1));
 
         // http://www.flickr.com/photos/usnationalarchives/4726917149/
-        mClusterManager.addItem(new Person(position(), "Gran", R.drawable.droid));
+        mClusterManager.addItem(new Person(position(), "Gran", R.drawable.s2));
 
         // http://www.flickr.com/photos/nypl/3111525394/
-        mClusterManager.addItem(new Person(position(), "Ruth", R.drawable.droid));
+        mClusterManager.addItem(new Person(position(), "Ruth", R.drawable.s3));
 
         // http://www.flickr.com/photos/smithsonian/2887433330/
-        mClusterManager.addItem(new Person(position(), "Stefan", R.drawable.droid));
+        mClusterManager.addItem(new Person(position(), "Stefan", R.drawable.s4));
 
         // http://www.flickr.com/photos/library_of_congress/2179915182/
-        mClusterManager.addItem(new Person(position(), "Mechanic", R.drawable.droid));
+        mClusterManager.addItem(new Person(position(), "Mechanic", R.drawable.s5));
 
         // http://www.flickr.com/photos/nationalmediamuseum/7893552556/
-        mClusterManager.addItem(new Person(position(), "Yeats", R.drawable.droid));
+        mClusterManager.addItem(new Person(position(), "Yeats", R.drawable.s6));
 
         // http://www.flickr.com/photos/sdasmarchives/5036231225/
-        mClusterManager.addItem(new Person(position(), "John", R.drawable.droid));
+        mClusterManager.addItem(new Person(position(), "John", R.drawable.s7));
 
         // http://www.flickr.com/photos/anmm_thecommons/7694202096/
-        mClusterManager.addItem(new Person(position(), "Trevor the Turtle", R.drawable.droid));
+        mClusterManager.addItem(new Person(position(), "Trevor the Turtle", R.drawable.s8));
 
         // http://www.flickr.com/photos/usnationalarchives/4726892651/
-        mClusterManager.addItem(new Person(position(), "Teach", R.drawable.droid));
+        mClusterManager.addItem(new Person(position(), "Teach", R.drawable.s1));
     }
 
     private LatLng position() {
