@@ -11,6 +11,7 @@ import kai.kaiprivate.thirdparty.KaiAndroidBootStrap;
 import kai.kaiprivate.thirdparty.KaiBitmapUtils;
 import kai.kaiprivate.thirdparty.KaiCaligraphy;
 import kai.kaiprivate.thirdparty.KaiColorArt;
+import kai.kaiprivate.thirdparty.KaiEventBus;
 import kai.kaiprivate.thirdparty.KaiHttpUtils;
 import kai.kaiprivate.thirdparty.KaiKenBurnView;
 import kai.kaiprivate.thirdparty.discrollview.KaiDiscroll;
@@ -31,33 +32,40 @@ public class MainActivity extends ActionBarActivity {
 //        Funcs.useMResource(MainActivity.this, "id", "tv");
 
 //
-//        mClass = KaiMultiImageSelectorActivity.class;
-//        mClass = KaiPhotoGallary.class;
-//        mClass = PinyinListActivity.class;
-//        mClass = UseLovelyView.class;
-//        mClass = KaiPullToRefresh.class;
-//        mClass = KaiPhotoView.class;
-//        mClass = KaiPhotoViewB.class;
-//        mClass = KaiPhotoViewPngAbove.class;
-//        mClass = KaiOpenCV.class;
-//        mClass = KaiUniversalImageLoader.class;
-//        mClass = KaiUltraPullToRefresh.class;
-//        mClass = KaiUIL4MMF.class;
-//        mClass = KaiGIF.class;
-//        mClass = KaiKenBurnView.class;
-//        mClass = KaiTextViewTimePicker4MMF.class;
-//        mClass = KaiBitmapUtils.class;
-//        mClass = KaiColorArt.class;
-//        mClass = KaiHttpUtils.class;
-//        mClass = KaiAndroidBootStrap.class;
-//        mClass = KaiCaligraphy.class;
-//        mClass = KaiGMapUtils.class;
-        mClass = KaiGMapUtilsCustomMarker.class;
-//        mClass = KaiObserver.class;
-//        mClass = KaiDiscroll.class;
+
+        mClass =
+//        KaiMultiImageSelectorActivity.class;
+//        KaiPhotoGallary.class;
+//        PinyinListActivity.class;
+//        UseLovelyView.class;
+//        KaiPullToRefresh.class;
+//        KaiPhotoView.class;
+//        KaiPhotoViewB.class;
+//        KaiPhotoViewPngAbove.class;
+//        KaiOpenCV.class;
+//        KaiUniversalImageLoader.class;
+//        KaiUltraPullToRefresh.class;
+//        KaiUIL4MMF.class;
+//        KaiGIF.class;
+//        KaiKenBurnView.class;
+//        KaiTextViewTimePicker4MMF.class;
+//        KaiBitmapUtils.class;
+//        KaiColorArt.class;
+//        KaiHttpUtils.class;
+//        KaiAndroidBootStrap.class;
+//        KaiCaligraphy.class;
+//        KaiGMapUtils.class;
+//        KaiGMapUtilsCustomMarker.class;
+//        KaiObserver.class;
+//        KaiDiscroll.class;
+        KaiEventBus.class;
+
 
         Intent intent = new Intent(MainActivity.this, mClass);
         startActivityForResult(intent, RESULT);
+
+
+
 
 
 

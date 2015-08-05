@@ -136,6 +136,10 @@
             android:name=".thirdparty.discrollview.KaiDiscroll"
             android:label="@string/title_activity_kai_observer" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiEventBus"
+            android:label="@string/title_activity_kai_event_bus" >
+        </activity>
     </application>
 
 </manifest>
