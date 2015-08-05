@@ -33,12 +33,12 @@ public class KaiEventBus extends AppCompatActivity {
         Toast.makeText(this, (String) event.message, Toast.LENGTH_SHORT).show();
     }
 
-    @Override
-    protected void onDestroy() {
-        EventBus.getDefault().unregister(this);
-
-        super.onDestroy();
-    }
+//    @Override
+//    protected void onDestroy() {
+//        EventBus.getDefault().unregister(this);
+//
+//        super.onDestroy();
+//    }
 
     public class MessageEvent {
         public final Object message;
