@@ -52,9 +52,9 @@ public class MainActivity extends ActionBarActivity {
 //        mClass = KaiAndroidBootStrap.class;
 //        mClass = KaiCaligraphy.class;
 //        mClass = KaiGMapUtils.class;
-//        mClass = KaiGMapUtilsCustomMarker.class;
+        mClass = KaiGMapUtilsCustomMarker.class;
 //        mClass = KaiObserver.class;
-        mClass = KaiDiscroll.class;
+//        mClass = KaiDiscroll.class;
 
         Intent intent = new Intent(MainActivity.this, mClass);
         startActivityForResult(intent, RESULT);

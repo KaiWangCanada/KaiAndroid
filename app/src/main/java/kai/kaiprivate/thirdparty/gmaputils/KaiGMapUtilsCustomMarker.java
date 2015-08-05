@@ -51,7 +51,7 @@ public class KaiGMapUtilsCustomMarker extends BaseGMapActivity implements Cluste
             mClusterImageView = (ImageView) multiProfile.findViewById(R.id.image);
 
             mImageView = new ImageView(getApplicationContext());
-            mDimension = 150;
+            mDimension = 50;
             mImageView.setLayoutParams(new ViewGroup.LayoutParams(mDimension, mDimension));
             int padding = 2;
             mImageView.setPadding(padding, padding, padding, padding);
