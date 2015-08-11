@@ -140,6 +140,10 @@
             android:name=".thirdparty.KaiEventBus"
             android:label="@string/title_activity_kai_event_bus" >
         </activity>
+        <activity
+            android:name=".thirdparty.parse.KaiParse"
+            android:label="@string/title_activity_kai_parse" >
+        </activity>
     </application>
 
 </manifest>

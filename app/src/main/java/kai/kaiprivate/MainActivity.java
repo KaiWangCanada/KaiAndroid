@@ -17,6 +17,7 @@ import kai.kaiprivate.thirdparty.KaiKenBurnView;
 import kai.kaiprivate.thirdparty.discrollview.KaiDiscroll;
 import kai.kaiprivate.thirdparty.gmaputils.KaiGMapUtils;
 import kai.kaiprivate.thirdparty.gmaputils.KaiGMapUtilsCustomMarker;
+import kai.kaiprivate.thirdparty.parse.KaiParse;
 
 public class MainActivity extends ActionBarActivity {
     private static final int RESULT = 0;
@@ -58,7 +59,9 @@ public class MainActivity extends ActionBarActivity {
 //        KaiGMapUtilsCustomMarker.class;
 //        KaiObserver.class;
 //        KaiDiscroll.class;
-        KaiEventBus.class;
+//        KaiEventBus.class;
+                KaiParse
+                .class;
 
 
         Intent intent = new Intent(MainActivity.this, mClass);
