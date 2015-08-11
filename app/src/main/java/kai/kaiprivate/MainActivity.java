@@ -35,32 +35,46 @@ public class MainActivity extends ActionBarActivity {
 //
 
         mClass =
-//        KaiMultiImageSelectorActivity.class;
-//        KaiPhotoGallary.class;
-//        PinyinListActivity.class;
-//        UseLovelyView.class;
-//        KaiPullToRefresh.class;
-//        KaiPhotoView.class;
-//        KaiPhotoViewB.class;
-//        KaiPhotoViewPngAbove.class;
-//        KaiOpenCV.class;
-//        KaiUniversalImageLoader.class;
-//        KaiUltraPullToRefresh.class;
-//        KaiUIL4MMF.class;
-//        KaiGIF.class;
-//        KaiKenBurnView.class;
-//        KaiTextViewTimePicker4MMF.class;
-//        KaiBitmapUtils.class;
-//        KaiColorArt.class;
-//        KaiHttpUtils.class;
-//        KaiAndroidBootStrap.class;
-//        KaiCaligraphy.class;
-//        KaiGMapUtils.class;
-//        KaiGMapUtilsCustomMarker.class;
-//        KaiObserver.class;
-//        KaiDiscroll.class;
-//        KaiEventBus.class;
-                KaiParse
+//        KaiMultiImageSelectorActivity;
+//        KaiPhotoGallary;
+//        PinyinListActivity;
+//        UseLovelyView;
+//        KaiPullToRefresh;
+//        KaiPhotoView;
+//        KaiPhotoViewB;
+//        KaiPhotoViewPngAbove;
+//        KaiOpenCV;
+//        KaiUniversalImageLoader;
+//        KaiUltraPullToRefresh;
+//        KaiUIL4MMF;
+//        KaiGIF;
+//        KaiKenBurnView;
+//        KaiTextViewTimePicker4MMF;
+//        KaiBitmapUtils;
+//        KaiColorArt;
+//        KaiHttpUtils;
+//        KaiAndroidBootStrap;
+//        KaiCaligraphy;
+//        KaiGMapUtils;
+//        KaiGMapUtilsCustomMarker;
+//        KaiObserver;
+//        KaiDiscroll;
+//        KaiEventBus;
+        KaiParse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 .class;
 
 
