@@ -152,6 +152,10 @@
             android:name=".thirdparty.guava.KaiGuavaOrderList"
             android:label="@string/title_activity_kai_guava_order_list" >
         </activity>
+        <activity
+            android:name=".thirdparty.guava.KaiGuavaEventBus"
+            android:label="@string/title_activity_kai_guava_event_bus" >
+        </activity>
     </application>
 
 </manifest>
