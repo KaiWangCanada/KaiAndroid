@@ -14,6 +14,7 @@ import kai.kaiprivate.thirdparty.KaiColorArt;
 import kai.kaiprivate.thirdparty.KaiEventBus;
 import kai.kaiprivate.thirdparty.KaiHttpUtils;
 import kai.kaiprivate.thirdparty.KaiKenBurnView;
+import kai.kaiprivate.thirdparty.KaiRxJava;
 import kai.kaiprivate.thirdparty.discrollview.KaiDiscroll;
 import kai.kaiprivate.thirdparty.gmaputils.KaiGMapUtils;
 import kai.kaiprivate.thirdparty.gmaputils.KaiGMapUtilsCustomMarker;
@@ -60,8 +61,8 @@ public class MainActivity extends ActionBarActivity {
 //        KaiObserver;
 //        KaiDiscroll;
 //        KaiEventBus;
-        KaiParse
-
+//        KaiParse
+KaiRxJava
 
 
 
