@@ -148,6 +148,10 @@
             android:name=".thirdparty.rxjava.KaiRxJava"
             android:label="@string/title_activity_kai_rx_java" >
         </activity>
+        <activity
+            android:name=".thirdparty.guava.KaiGuavaOrderList"
+            android:label="@string/title_activity_kai_guava_order_list" >
+        </activity>
     </application>
 
 </manifest>

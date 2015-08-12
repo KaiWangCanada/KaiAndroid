@@ -43,4 +43,5 @@ dependencies {
     compile 'com.parse.bolts:bolts-android:1.+'
     compile fileTree(include: 'Parse-*.jar', dir: 'libs')
     compile 'io.reactivex:rxjava:1.0.13'
+    compile 'com.google.guava:guava:19.0-rc1'
 }
