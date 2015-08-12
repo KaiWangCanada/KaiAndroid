@@ -1,4 +1,4 @@
-package kai.kaiprivate.thirdparty;
+package kai.kaiprivate.thirdparty.rxjava;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -32,7 +32,21 @@ public class KaiRxJava extends AppCompatActivity {
 
     public void click(View view) {
 //        standardRx();
-        simplifiedRx();
+//        simplifiedRx();
+        fromClass();
+    }
+
+    private void fromClass() {
+        KaiObservable kaiObservable = new KaiObservable();
+
+        mAction1 = new Action1<String>() {
+            @Override
+            public void call(String s) {
+                System.out.println(s);
+            }
+        };
+
+        kaiObservable.getObversable("hello, world!").subscribe(mAction1);
     }
 
     private void simplifiedRx() {

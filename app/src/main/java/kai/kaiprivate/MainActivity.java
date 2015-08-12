@@ -4,21 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 
-import kai.kaiprivate.kai.KaiTextViewTimePicker4MMF;
-import kai.kaiprivate.kai.KaiUIL4MMF;
-import kai.kaiprivate.pattern.observer.KaiObserver;
-import kai.kaiprivate.thirdparty.KaiAndroidBootStrap;
-import kai.kaiprivate.thirdparty.KaiBitmapUtils;
-import kai.kaiprivate.thirdparty.KaiCaligraphy;
-import kai.kaiprivate.thirdparty.KaiColorArt;
-import kai.kaiprivate.thirdparty.KaiEventBus;
-import kai.kaiprivate.thirdparty.KaiHttpUtils;
-import kai.kaiprivate.thirdparty.KaiKenBurnView;
-import kai.kaiprivate.thirdparty.KaiRxJava;
-import kai.kaiprivate.thirdparty.discrollview.KaiDiscroll;
-import kai.kaiprivate.thirdparty.gmaputils.KaiGMapUtils;
-import kai.kaiprivate.thirdparty.gmaputils.KaiGMapUtilsCustomMarker;
-import kai.kaiprivate.thirdparty.parse.KaiParse;
+import kai.kaiprivate.thirdparty.rxjava.KaiRxJava;
 
 public class MainActivity extends ActionBarActivity {
     private static final int RESULT = 0;

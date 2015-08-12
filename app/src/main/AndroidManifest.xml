@@ -145,7 +145,7 @@
             android:label="@string/title_activity_kai_parse" >
         </activity>
         <activity
-            android:name=".thirdparty.KaiRxJava"
+            android:name=".thirdparty.rxjava.KaiRxJava"
             android:label="@string/title_activity_kai_rx_java" >
         </activity>
     </application>
