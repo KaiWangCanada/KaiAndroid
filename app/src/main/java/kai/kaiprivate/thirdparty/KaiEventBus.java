@@ -23,14 +23,20 @@ public class KaiEventBus extends AppCompatActivity {
     }
 
     public void click(View view) {
-        EventBus.getDefault().post(new MessageEvent("send"));
-
+//        EventBus.getDefault().post(new MessageEvent("send"));
+        EventBus.getDefault().post("send a string");
     }
 
     // This method will be called when a MessageEvent is posted
     @Subscribe
     public void onEvent(MessageEvent event){
         Toast.makeText(this, (String) event.message, Toast.LENGTH_SHORT).show();
+    }
+
+    // This method will be called when a String is posted
+    @Subscribe
+    public void onEvent(String event){
+        Toast.makeText(this, event, Toast.LENGTH_SHORT).show();
     }
 
 //    @Override

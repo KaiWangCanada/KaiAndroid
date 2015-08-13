@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 import com.lidroid.xutils.http.client.multipart.content.StringBody;
 
@@ -28,6 +29,7 @@ public class KaiRxJava extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kai_rx_java);
+        TextView tv = (TextView) findViewById(R.id.tv_rxjava);
     }
 
     public void click(View view) {

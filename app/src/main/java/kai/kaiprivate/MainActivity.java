@@ -5,6 +5,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 
 import kai.kaiprivate.kai.KaiReflection;
+import kai.kaiprivate.pattern.observer.KaiObserver;
+import kai.kaiprivate.thirdparty.KaiEventBus;
 import kai.kaiprivate.thirdparty.guava.KaiGuavaOrderList;
 import kai.kaiprivate.thirdparty.rxjava.KaiRxJava;
 
@@ -24,35 +26,35 @@ public class MainActivity extends ActionBarActivity {
 //
 
         mClass =
-//KaiMultiImageSelectorActivity;
-//KaiPhotoGallary;
-//PinyinListActivity;
-//UseLovelyView;
-//KaiPullToRefresh;
-//KaiPhotoView;
-//KaiPhotoViewB;
-//KaiPhotoViewPngAbove;
-//KaiOpenCV;
-//KaiUniversalImageLoader;
-//KaiUltraPullToRefresh;
-//KaiUIL4MMF;
-//KaiGIF;
-//KaiKenBurnView;
-//KaiTextViewTimePicker4MMF;
-//KaiBitmapUtils;
-//KaiColorArt;
-//KaiHttpUtils;
-//KaiAndroidBootStrap;
-//KaiCaligraphy;
-//KaiGMapUtils;
-//KaiGMapUtilsCustomMarker;
-//KaiObserver;
-//KaiDiscroll;
-//KaiEventBus;
+//KaiMultiImageSelectorActivity
+//KaiPhotoGallary
+//PinyinListActivity
+//UseLovelyView
+//KaiPullToRefresh
+//KaiPhotoView
+//KaiPhotoViewB
+//KaiPhotoViewPngAbove
+//KaiOpenCV
+//KaiUniversalImageLoader
+//KaiUltraPullToRefresh
+//KaiUIL4MMF
+//KaiGIF
+//KaiKenBurnView
+//KaiTextViewTimePicker4MMF
+//KaiBitmapUtils
+//KaiColorArt
+//KaiHttpUtils
+//KaiAndroidBootStrap
+//KaiCaligraphy
+//KaiGMapUtils
+//KaiGMapUtilsCustomMarker
+//KaiObserver
+//KaiDiscroll
+KaiEventBus
 //KaiParse
 //KaiRxJava
 //KaiGuavaOrderList
-KaiReflection
+//KaiReflection
 
 
 
