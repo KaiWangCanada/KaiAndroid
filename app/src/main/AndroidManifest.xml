@@ -156,6 +156,10 @@
             android:name=".thirdparty.guava.KaiGuavaEventBus"
             android:label="@string/title_activity_kai_guava_event_bus" >
         </activity>
+        <activity
+            android:name=".kai.KaiReflection"
+            android:label="@string/title_activity_kai_reflection" >
+        </activity>
     </application>
 
 </manifest>

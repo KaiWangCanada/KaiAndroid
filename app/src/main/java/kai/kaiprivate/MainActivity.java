@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 
+import kai.kaiprivate.kai.KaiReflection;
 import kai.kaiprivate.thirdparty.guava.KaiGuavaOrderList;
 import kai.kaiprivate.thirdparty.rxjava.KaiRxJava;
 
@@ -50,8 +51,8 @@ public class MainActivity extends ActionBarActivity {
 //KaiEventBus;
 //KaiParse
 //KaiRxJava
-KaiGuavaOrderList
-
+//KaiGuavaOrderList
+KaiReflection
 
 
 
