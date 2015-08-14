@@ -25,8 +25,8 @@ public class KaiReflection extends AppCompatActivity {
         // retrieve the method named "append"
         Method appendMethod = null;
         try {
-//            appendMethod = sb.getClass().getMethod("append", String.class);
-            appendMethod = sb.getClass().getMethod(null, null);
+            appendMethod = sb.getClass().getMethod("append", String.class);
+//            appendMethod = sb.getClass().getMethod(null, null);
 
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
