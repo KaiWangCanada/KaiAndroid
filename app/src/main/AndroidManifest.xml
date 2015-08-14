@@ -160,6 +160,10 @@
             android:name=".kai.KaiReflection"
             android:label="@string/title_activity_kai_reflection" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiYoyo"
+            android:label="@string/title_activity_kai_yoyo" >
+        </activity>
     </application>
 
 </manifest>

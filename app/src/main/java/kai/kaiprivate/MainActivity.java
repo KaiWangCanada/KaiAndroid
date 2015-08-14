@@ -7,6 +7,7 @@ import android.os.Bundle;
 import kai.kaiprivate.kai.KaiReflection;
 import kai.kaiprivate.pattern.observer.KaiObserver;
 import kai.kaiprivate.thirdparty.KaiEventBus;
+import kai.kaiprivate.thirdparty.KaiYoyo;
 import kai.kaiprivate.thirdparty.gmaputils.KaiGMapUtils;
 import kai.kaiprivate.thirdparty.guava.KaiGuavaOrderList;
 import kai.kaiprivate.thirdparty.rxjava.KaiRxJava;
@@ -47,7 +48,7 @@ public class MainActivity extends ActionBarActivity {
 //KaiHttpUtils
 //KaiAndroidBootStrap
 //KaiCaligraphy
-KaiGMapUtils
+//KaiGMapUtils
 //KaiGMapUtilsCustomMarker
 //KaiObserver
 //KaiDiscroll
@@ -56,7 +57,7 @@ KaiGMapUtils
 //KaiRxJava
 //KaiGuavaOrderList
 //KaiReflection
-
+KaiYoyo
 
 
 
