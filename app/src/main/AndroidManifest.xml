@@ -160,6 +160,10 @@
             android:name=".kai.KaiReflection"
             android:label="@string/title_activity_kai_reflection" >
         </activity>
+        <activity
+            android:name=".kai.KaiSpannable"
+            android:label="@string/title_activity_kai_spannable" >
+        </activity>
     </application>
 
 </manifest>
