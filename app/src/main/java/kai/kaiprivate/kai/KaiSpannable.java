@@ -19,7 +19,9 @@ public class KaiSpannable extends AppCompatActivity {
 
         TextView t = (TextView) findViewById(R.id.tv);
         String _str = (String) t.getText();
+
         t.setText(_str, TextView.BufferType.SPANNABLE);
+
         Spannable s = (Spannable)t.getText();
         int start = 0;
         int end = 11;
