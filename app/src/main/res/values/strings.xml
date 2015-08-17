@@ -34,5 +34,4 @@
     <string name="title_activity_kai_guava_order_list">KaiGuavaOrderList</string>
     <string name="title_activity_kai_guava_event_bus">KaiGuavaEventBus</string>
     <string name="title_activity_kai_reflection">KaiReflection</string>
-    <string name="title_activity_kai_yoyo">KaiYoyo</string>
 </resources>

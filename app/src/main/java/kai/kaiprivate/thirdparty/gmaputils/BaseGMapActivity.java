@@ -2,9 +2,6 @@ package kai.kaiprivate.thirdparty.gmaputils;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.util.Log;
-import android.view.View;
-
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 
@@ -48,9 +45,5 @@ public abstract class BaseGMapActivity extends FragmentActivity {
     protected GoogleMap getMap() {
         setUpMapIfNeeded();
         return mMap;
-    }
-
-    public void click(View v) {
-        Log.v("kai", "click");
     }
 }
