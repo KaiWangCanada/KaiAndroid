@@ -7,6 +7,7 @@ import android.os.Bundle;
 import kai.kaiprivate.kai.KaiReflection;
 import kai.kaiprivate.kai.KaiSpannable;
 import kai.kaiprivate.pattern.observer.KaiObserver;
+import kai.kaiprivate.thirdparty.KaiDragTopLayout;
 import kai.kaiprivate.thirdparty.KaiEventBus;
 import kai.kaiprivate.thirdparty.KaiYoyo;
 import kai.kaiprivate.thirdparty.gmaputils.KaiGMapUtils;
@@ -59,8 +60,8 @@ public class MainActivity extends ActionBarActivity {
 //KaiGuavaOrderList
 //KaiReflection
 //KaiSpannable
-KaiYoyo
-
+//KaiYoyo
+KaiDragTopLayout
 
 
 

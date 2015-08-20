@@ -168,6 +168,10 @@
             android:name=".thirdparty.KaiYoyo"
             android:label="@string/title_activity_kai_spannable" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiDragTopLayout"
+            android:label="@string/title_activity_kai_drag_top_layout" >
+        </activity>
     </application>
 
 </manifest>
