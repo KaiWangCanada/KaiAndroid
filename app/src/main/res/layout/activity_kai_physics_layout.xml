@@ -13,7 +13,7 @@
         <com.jawnnypoo.physicslayout.PhysicsLinearLayout
             android:id="@+id/physics_layout"
             android:layout_width="500dp"
-            app:gravityX="6"
+            app:gravityX="3"
             app:gravityY="6"
             android:layout_height="500dp">
 
