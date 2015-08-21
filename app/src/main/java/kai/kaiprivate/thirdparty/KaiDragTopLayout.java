@@ -18,6 +18,10 @@ public class KaiDragTopLayout extends AppCompatActivity {
         setContentView(R.layout.activity_kai_drag_top_layout);
 
         dragTopLayout = (DragTopLayout) findViewById(R.id.drag_layout);
+        dragTopLayout.closeTopView(true);
+        dragTopLayout.toggleTopView();
+//        dragTopLayout.openTopView(true);
+//        dragTopLayout.setCollapseOffset(100);
 //        dragTopLayout.over
     }
 
