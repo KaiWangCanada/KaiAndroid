@@ -172,6 +172,10 @@
             android:name=".thirdparty.KaiDragTopLayout"
             android:label="@string/title_activity_kai_drag_top_layout" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiPhysicsLayout"
+            android:label="@string/title_activity_kai_physics_layout" >
+        </activity>
     </application>
 
 </manifest>
