@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="kai.kaiprivate" >
+          xmlns:tools="http://schemas.android.com/tools"
+          package="kai.kaiprivate">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -15,7 +16,7 @@
         android:glEsVersion="0x00020000"
         android:required="true" />
 
-    <application
+    <application tools:replace="android:icon"
         android:name=".droid.application.KaiApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_kai"
@@ -183,6 +184,10 @@
         <activity
             android:name=".thirdparty.KaiTooltipView"
             android:label="@string/title_activity_kai_tooltip_view" >
+        </activity>
+        <activity
+            android:name=".thirdparty.KaiShowTipView"
+            android:label="@string/title_activity_kai_show_tip_view" >
         </activity>
     </application>
 

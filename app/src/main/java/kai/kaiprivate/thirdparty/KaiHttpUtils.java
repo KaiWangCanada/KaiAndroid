@@ -45,7 +45,7 @@ public class KaiHttpUtils extends ActionBarActivity {
                         // Gson
                         Gson gson = new Gson();
                         Restaurants restaurants = gson.fromJson(responseInfo.result, Restaurants.class);
-                        Log.v("kai", restaurants.getRestaurant(0).toString());
+                        Log.v("kai", restaurants.getRestaurant(0).getName());
                     }
 
                     @Override
@@ -73,6 +73,10 @@ public class KaiHttpUtils extends ActionBarActivity {
 
         @SerializedName("name")
         private String name;
+
+        public String getName() {
+            return name;
+        }
 
         @Override
         public String toString() {
