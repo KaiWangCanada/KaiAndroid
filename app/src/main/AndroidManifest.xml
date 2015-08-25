@@ -194,6 +194,10 @@
             android:name=".thirdparty.KaiAppIntro"
             android:label="@string/title_activity_kai_app_intro" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiTimeSquare"
+            android:label="@string/title_activity_kai_time_square" >
+        </activity>
     </application>
 
 </manifest>

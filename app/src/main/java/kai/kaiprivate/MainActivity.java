@@ -13,6 +13,7 @@ import kai.kaiprivate.thirdparty.KaiEventBus;
 import kai.kaiprivate.thirdparty.KaiHttpUtils;
 import kai.kaiprivate.thirdparty.KaiPhysicsLayout;
 import kai.kaiprivate.thirdparty.KaiShowTipView;
+import kai.kaiprivate.thirdparty.KaiTimeSquare;
 import kai.kaiprivate.thirdparty.KaiTooltipView;
 import kai.kaiprivate.thirdparty.KaiYoyo;
 import kai.kaiprivate.thirdparty.gmaputils.KaiGMapUtils;
@@ -70,7 +71,23 @@ public class MainActivity extends ActionBarActivity {
 //KaiPhysicsLayout
 //KaiTooltipView
 //KaiShowTipView
-KaiAppIntro
+//KaiAppIntro
+KaiTimeSquare
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
