@@ -7,6 +7,7 @@ import android.os.Bundle;
 import kai.kaiprivate.kai.KaiReflection;
 import kai.kaiprivate.kai.KaiSpannable;
 import kai.kaiprivate.pattern.observer.KaiObserver;
+import kai.kaiprivate.thirdparty.KaiAppIntro;
 import kai.kaiprivate.thirdparty.KaiDragTopLayout;
 import kai.kaiprivate.thirdparty.KaiEventBus;
 import kai.kaiprivate.thirdparty.KaiHttpUtils;
@@ -68,8 +69,8 @@ public class MainActivity extends ActionBarActivity {
 //KaiDragTopLayout
 //KaiPhysicsLayout
 //KaiTooltipView
-KaiShowTipView
-
+//KaiShowTipView
+KaiAppIntro
 
 
 
