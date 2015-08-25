@@ -10,6 +10,7 @@ import kai.kaiprivate.pattern.observer.KaiObserver;
 import kai.kaiprivate.thirdparty.KaiDragTopLayout;
 import kai.kaiprivate.thirdparty.KaiEventBus;
 import kai.kaiprivate.thirdparty.KaiPhysicsLayout;
+import kai.kaiprivate.thirdparty.KaiTooltipView;
 import kai.kaiprivate.thirdparty.KaiYoyo;
 import kai.kaiprivate.thirdparty.gmaputils.KaiGMapUtils;
 import kai.kaiprivate.thirdparty.guava.KaiGuavaOrderList;
@@ -63,8 +64,8 @@ public class MainActivity extends ActionBarActivity {
 //KaiSpannable
 //KaiYoyo
 //KaiDragTopLayout
-KaiPhysicsLayout
-
+//KaiPhysicsLayout
+KaiTooltipView
 
 
 

@@ -38,4 +38,5 @@
     <string name="title_activity_kai_drag_top_layout">KaiDragTopLayout</string>
     <string name="title_activity_kai_physics_layout">KaiPhysicsLayout</string>
     <string name="title_activity_kai_logger">KaiLogger</string>
+    <string name="title_activity_kai_tooltip_view">KaiTooltipView</string>
 </resources>

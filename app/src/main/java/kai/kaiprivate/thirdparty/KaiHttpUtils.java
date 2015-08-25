@@ -14,6 +14,7 @@ import com.lidroid.xutils.exception.HttpException;
 import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.lidroid.xutils.http.client.HttpRequest;
+import com.orhanobut.logger.Logger;
 
 import java.util.List;
 
@@ -38,7 +39,8 @@ public class KaiHttpUtils extends ActionBarActivity {
 
                     @Override
                     public void onSuccess(ResponseInfo<String> responseInfo) {
-                        Log.v("kai", "result: " + responseInfo.result);
+//                        Log.v("kai", "result: " + responseInfo.result);
+                        Logger.json(responseInfo.result);
 
                         // Gson
                         Gson gson = new Gson();

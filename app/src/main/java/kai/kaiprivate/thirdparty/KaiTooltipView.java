@@ -5,19 +5,14 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import java.util.logging.Logger;
-
 import kai.kaiprivate.R;
 
-public class KaiLogger extends AppCompatActivity {
+public class KaiTooltipView extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-        String strJson = "";
-        com.orhanobut.logger.Logger.json(strJson);
+        setContentView(R.layout.activity_kai_tooltip_view);
     }
 
 }

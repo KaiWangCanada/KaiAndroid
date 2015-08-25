@@ -180,6 +180,10 @@
             android:name=".thirdparty.KaiLogger"
             android:label="@string/title_activity_kai_logger" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiTooltipView"
+            android:label="@string/title_activity_kai_tooltip_view" >
+        </activity>
     </application>
 
 </manifest>
