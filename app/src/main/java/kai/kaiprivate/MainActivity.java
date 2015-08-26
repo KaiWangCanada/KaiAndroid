@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 
+import kai.kaiprivate.kai.KaiJavascript;
 import kai.kaiprivate.kai.KaiReflection;
 import kai.kaiprivate.kai.KaiSpannable;
 import kai.kaiprivate.pattern.observer.KaiObserver;
@@ -71,9 +72,9 @@ public class MainActivity extends ActionBarActivity {
 //KaiPhysicsLayout
 //KaiTooltipView
 //KaiShowTipView
-KaiAppIntro
+//KaiAppIntro
 //KaiTimeSquare
-
+KaiJavascript
 
 
 

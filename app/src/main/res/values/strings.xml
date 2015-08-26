@@ -42,4 +42,5 @@
     <string name="title_activity_kai_show_tip_view">KaiShowTipView</string>
     <string name="title_activity_kai_app_intro">KaiAppIntro</string>
     <string name="title_activity_kai_time_square">KaiTimeSquare</string>
+    <string name="title_activity_kai_javascript">KaiJavascript</string>
 </resources>
