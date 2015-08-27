@@ -55,4 +55,18 @@ dependencies {
     compile 'com.github.paolorotolo:appintro:3.2.0'
     compile 'com.squareup:android-times-square:1.6.3@aar'
     compile 'com.android.support:multidex:1.0.0'
+    compile 'com.marvinlabs:android-intents:1.5.1@aar'
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -202,6 +202,10 @@
             android:name=".kai.KaiJavascript"
             android:label="@string/title_activity_kai_javascript" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiIntents"
+            android:label="@string/title_activity_kai_intents" >
+        </activity>
     </application>
 
 </manifest>

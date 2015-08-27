@@ -12,6 +12,7 @@ import kai.kaiprivate.thirdparty.KaiAppIntro;
 import kai.kaiprivate.thirdparty.KaiDragTopLayout;
 import kai.kaiprivate.thirdparty.KaiEventBus;
 import kai.kaiprivate.thirdparty.KaiHttpUtils;
+import kai.kaiprivate.thirdparty.KaiIntents;
 import kai.kaiprivate.thirdparty.KaiPhysicsLayout;
 import kai.kaiprivate.thirdparty.KaiShowTipView;
 import kai.kaiprivate.thirdparty.KaiTimeSquare;
@@ -74,8 +75,8 @@ public class MainActivity extends ActionBarActivity {
 //KaiShowTipView
 //KaiAppIntro
 //KaiTimeSquare
-KaiJavascript
-
+//KaiJavascript
+KaiIntents
 
 
 
