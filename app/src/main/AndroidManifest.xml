@@ -206,6 +206,10 @@
             android:name=".thirdparty.KaiIntents"
             android:label="@string/title_activity_kai_intents" >
         </activity>
+        <activity
+            android:name=".kai.imagegridview.KaiImageGridview"
+            android:label="@string/title_activity_kai_image_gridview" >
+        </activity>
     </application>
 
 </manifest>

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import kai.kaiprivate.kai.KaiJavascript;
 import kai.kaiprivate.kai.KaiReflection;
 import kai.kaiprivate.kai.KaiSpannable;
+import kai.kaiprivate.kai.imagegridview.KaiImageGridview;
 import kai.kaiprivate.pattern.observer.KaiObserver;
 import kai.kaiprivate.thirdparty.KaiAppIntro;
 import kai.kaiprivate.thirdparty.KaiDragTopLayout;
@@ -76,8 +77,8 @@ public class MainActivity extends ActionBarActivity {
 //KaiAppIntro
 //KaiTimeSquare
 //KaiJavascript
-KaiIntents
-
+//KaiIntents
+KaiImageGridview
 
 
 
