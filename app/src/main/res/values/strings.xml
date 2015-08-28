@@ -45,4 +45,5 @@
     <string name="title_activity_kai_javascript">KaiJavascript</string>
     <string name="title_activity_kai_intents">KaiIntents</string>
     <string name="title_activity_kai_image_gridview">KaiImageGridview</string>
+    <string name="title_activity_kai_io_card">KaiIoCard</string>
 </resources>

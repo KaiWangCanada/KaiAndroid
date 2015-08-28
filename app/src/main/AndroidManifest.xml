@@ -210,6 +210,10 @@
             android:name=".kai.imagegridview.KaiImageGridview"
             android:label="@string/title_activity_kai_image_gridview" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiIoCard"
+            android:label="@string/title_activity_kai_io_card" >
+        </activity>
     </application>
 
 </manifest>
