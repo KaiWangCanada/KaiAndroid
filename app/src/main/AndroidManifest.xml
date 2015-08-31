@@ -214,6 +214,10 @@
             android:name=".thirdparty.KaiIoCard"
             android:label="@string/title_activity_kai_io_card" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiFresco"
+            android:label="@string/title_activity_kai_fresco" >
+        </activity>
     </application>
 
 </manifest>

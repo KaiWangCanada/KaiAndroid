@@ -57,6 +57,7 @@ dependencies {
     compile 'com.android.support:multidex:1.0.0'
     compile 'com.marvinlabs:android-intents:1.5.1@aar'
     compile 'io.card:android-sdk:5.0.1'
+    compile 'com.facebook.fresco:fresco:0.7.0+'
 
 
 
