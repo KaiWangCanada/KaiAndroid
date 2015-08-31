@@ -218,6 +218,10 @@
             android:name=".thirdparty.KaiFresco"
             android:label="@string/title_activity_kai_fresco" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiPickerView"
+            android:label="@string/title_activity_kai_picker_view" >
+        </activity>
     </application>
 
 </manifest>

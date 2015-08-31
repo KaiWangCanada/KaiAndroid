@@ -47,4 +47,5 @@
     <string name="title_activity_kai_image_gridview">KaiImageGridview</string>
     <string name="title_activity_kai_io_card">KaiIoCard</string>
     <string name="title_activity_kai_fresco">KaiFresco</string>
+    <string name="title_activity_kai_picker_view">KaiPickerView</string>
 </resources>

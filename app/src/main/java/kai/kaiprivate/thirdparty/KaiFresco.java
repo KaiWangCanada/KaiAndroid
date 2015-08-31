@@ -24,7 +24,7 @@ public class KaiFresco extends AppCompatActivity {
 
         Uri uri = Uri.parse("https://raw.githubusercontent" +
                 ".com/facebook/fresco/gh-pages/static/fresco-logo.png");
-        
+
         SimpleDraweeView draweeView = (SimpleDraweeView) findViewById(R.id.my_image_view);
         draweeView.setImageURI(uri);
     }
