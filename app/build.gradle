@@ -59,6 +59,7 @@ dependencies {
     compile 'io.card:android-sdk:5.0.1'
     compile 'com.facebook.fresco:fresco:0.7.0+'
     compile 'com.bigkoo:pickerview:1.0.0'
+    compile 'com.facebook.device.yearclass:yearclass:1.0.1'
 
 
 

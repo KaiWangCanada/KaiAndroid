@@ -222,6 +222,10 @@
             android:name=".thirdparty.KaiPickerView"
             android:label="@string/title_activity_kai_picker_view" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiYearClass"
+            android:label="@string/title_activity_kai_year_class" >
+        </activity>
     </application>
 
 </manifest>

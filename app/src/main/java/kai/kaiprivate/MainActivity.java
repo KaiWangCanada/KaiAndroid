@@ -21,6 +21,7 @@ import kai.kaiprivate.thirdparty.KaiPickerView;
 import kai.kaiprivate.thirdparty.KaiShowTipView;
 import kai.kaiprivate.thirdparty.KaiTimeSquare;
 import kai.kaiprivate.thirdparty.KaiTooltipView;
+import kai.kaiprivate.thirdparty.KaiYearClass;
 import kai.kaiprivate.thirdparty.KaiYoyo;
 import kai.kaiprivate.thirdparty.gmaputils.KaiGMapUtils;
 import kai.kaiprivate.thirdparty.guava.KaiGuavaOrderList;
@@ -84,8 +85,8 @@ public class MainActivity extends ActionBarActivity {
 //KaiImageGridview
 //KaiIoCard
 //KaiFresco
-KaiPickerView
-
+//KaiPickerView
+KaiYearClass
 
 
 
