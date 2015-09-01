@@ -16,6 +16,7 @@ import kai.kaiprivate.thirdparty.KaiFresco;
 import kai.kaiprivate.thirdparty.KaiHttpUtils;
 import kai.kaiprivate.thirdparty.KaiIntents;
 import kai.kaiprivate.thirdparty.KaiIoCard;
+import kai.kaiprivate.thirdparty.KaiParticle;
 import kai.kaiprivate.thirdparty.KaiPhysicsLayout;
 import kai.kaiprivate.thirdparty.KaiPickerView;
 import kai.kaiprivate.thirdparty.KaiShowTipView;
@@ -86,8 +87,8 @@ public class MainActivity extends ActionBarActivity {
 //KaiIoCard
 //KaiFresco
 //KaiPickerView
-KaiYearClass
-
+//KaiYearClass
+KaiParticle
 
 
 

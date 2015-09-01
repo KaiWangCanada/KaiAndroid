@@ -226,6 +226,10 @@
             android:name=".thirdparty.KaiYearClass"
             android:label="@string/title_activity_kai_year_class" >
         </activity>
+        <activity
+            android:name=".thirdparty.KaiParticle"
+            android:label="@string/title_activity_kai_particle" >
+        </activity>
     </application>
 
 </manifest>
