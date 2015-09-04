@@ -1,11 +1,16 @@
 package kai.kaiprivate.kai;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Spannable;
+import android.text.Spanned;
+import android.text.style.ClickableSpan;
 import android.text.style.ForegroundColorSpan;
+import android.text.style.UnderlineSpan;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import kai.kaiprivate.R;
@@ -31,6 +36,16 @@ public class KaiSpannable extends AppCompatActivity {
         end = start + sStr.length();
 
         s.setSpan(new ForegroundColorSpan(0xFFFF0000), start, end, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        s.setSpan(new UnderlineSpan(), start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        s.setSpan(new ClickableSpan() {
+            @Override
+            public void onClick(View widget) {
+                startActivity(new Intent(KaiSpannable.this, KaiUIL4MMF.class));
+            }
+        }, start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE); //Spannable, Spanned, the same.
+
     }
 
 }
