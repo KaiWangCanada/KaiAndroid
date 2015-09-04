@@ -5,9 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Spannable;
 import android.text.Spanned;
+import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.UnderlineSpan;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -26,6 +28,7 @@ public class KaiSpannable extends AppCompatActivity {
         String _str = (String) t.getText();
 
         t.setText(_str, TextView.BufferType.SPANNABLE);
+        t.setMovementMethod(LinkMovementMethod.getInstance());
 
         Spannable s = (Spannable)t.getText();
         int start = 0;
@@ -42,6 +45,7 @@ public class KaiSpannable extends AppCompatActivity {
         s.setSpan(new ClickableSpan() {
             @Override
             public void onClick(View widget) {
+                Log.v("kai", "click");
                 startActivity(new Intent(KaiSpannable.this, KaiUIL4MMF.class));
             }
         }, start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE); //Spannable, Spanned, the same.
