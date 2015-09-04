@@ -230,6 +230,10 @@
             android:name=".thirdparty.KaiParticle"
             android:label="@string/title_activity_kai_particle" >
         </activity>
+        <activity
+            android:name=".kai.KaiSpeech"
+            android:label="@string/title_activity_kai_speech" >
+        </activity>
     </application>
 
 </manifest>

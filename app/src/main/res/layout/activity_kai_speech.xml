@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                style="@style/ll_verticle"
+                tools:context="kai.kaiprivate.kai.KaiSpeech">
+
+    <Button
+        android:id="@+id/btn"
+        android:text="click"
+        style="@style/btn_center_30_click"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:text="@string/hello_world"
+        style="@style/tv_center_30"/>
+
+</LinearLayout>

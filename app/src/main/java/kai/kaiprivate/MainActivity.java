@@ -7,6 +7,7 @@ import android.os.Bundle;
 import kai.kaiprivate.kai.KaiJavascript;
 import kai.kaiprivate.kai.KaiReflection;
 import kai.kaiprivate.kai.KaiSpannable;
+import kai.kaiprivate.kai.KaiSpeech;
 import kai.kaiprivate.kai.imagegridview.KaiImageGridview;
 import kai.kaiprivate.pattern.observer.KaiObserver;
 import kai.kaiprivate.thirdparty.KaiAppIntro;
@@ -73,7 +74,7 @@ public class MainActivity extends ActionBarActivity {
 //KaiRxJava
 //KaiGuavaOrderList
 //KaiReflection
-KaiSpannable
+//KaiSpannable
 //KaiYoyo
 //KaiDragTopLayout
 //KaiPhysicsLayout
@@ -89,7 +90,7 @@ KaiSpannable
 //KaiPickerView
 //KaiYearClass
 //KaiParticle
-
+KaiSpeech
 
 
 
