@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/KaiAndroid/IndexListViewWithPinyin/src/main/res/values/color.xml -->
+    <!-- From: file:/C:/Users/Kai/Documents/Android/KaiAndroid/KaiAndroid/IndexListViewWithPinyin/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="background">#FF000000</color>
     <color name="black">#FF000000</color>
@@ -26,16 +26,16 @@
     <color name="white">#FFFFFFFF</color>
     <color name="whitetran">#87FFFFFF</color>
     <color name="yellow">#FFFFE400</color>
-    <!-- From: file:/D:/KaiAndroid/IndexListViewWithPinyin/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Users/Kai/Documents/Android/KaiAndroid/KaiAndroid/IndexListViewWithPinyin/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/D:/KaiAndroid/IndexListViewWithPinyin/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Kai/Documents/Android/KaiAndroid/KaiAndroid/IndexListViewWithPinyin/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">CityList</string>
     <string name="hello_world">Hello world!</string>
-    <!-- From: file:/D:/KaiAndroid/IndexListViewWithPinyin/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Kai/Documents/Android/KaiAndroid/KaiAndroid/IndexListViewWithPinyin/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

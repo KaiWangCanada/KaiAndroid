@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
-    <file url="file://$PROJECT_DIR$/app/src/main/java/kai/kaiprivate/thirdparty/discrollview/DiscrollvableGreenLayout.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/kai/kaiprivate/thirdparty/discrollview/DiscrollvableLastLayout.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/kai/kaiprivate/thirdparty/discrollview/DiscrollvablePathLayout.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/kai/kaiprivate/thirdparty/discrollview/DiscrollvablePurpleLayout.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/kai/kaiprivate/thirdparty/discrollview/DiscrollvableRedLayout.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/kai/kaiprivate/thirdparty/discrollview/KaiDiscroll.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/kai/kaiprivate/thirdparty/gmaputils/MultiDrawable.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/kai/kaiprivate/thirdparty/gmaputils/Person.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/cheese1.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/cheese2.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/cheese3.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ilovecheese_cheese.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ilovecheese_heart.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ilovecheese_i.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_kai_discroll.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/gmaputils_multi_profile.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/item_pager_image.xml" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/showTipsView" charset="GBK" />
+  <component name="Encoding">
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
