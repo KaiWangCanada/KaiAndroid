@@ -51,4 +51,5 @@
     <string name="title_activity_kai_year_class">KaiYearClass</string>
     <string name="title_activity_kai_particle">KaiParticle</string>
     <string name="title_activity_kai_speech">KaiSpeech</string>
+    <string name="title_activity_kai_sensors">KaiSensors</string>
 </resources>

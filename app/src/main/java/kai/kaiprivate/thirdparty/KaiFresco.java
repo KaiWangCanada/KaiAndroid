@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.facebook.drawee.backends.pipeline.Fresco;
-import com.facebook.drawee.view.SimpleDraweeView;
+//import com.facebook.drawee.backends.pipeline.Fresco;
+//import com.facebook.drawee.view.SimpleDraweeView;
 
 import kai.kaiprivate.R;
 
@@ -17,7 +17,7 @@ public class KaiFresco extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-
+/*
         Fresco.initialize(this);
 
         setContentView(R.layout.activity_kai_fresco);
@@ -26,7 +26,7 @@ public class KaiFresco extends AppCompatActivity {
                 ".com/facebook/fresco/gh-pages/static/fresco-logo.png");
 
         SimpleDraweeView draweeView = (SimpleDraweeView) findViewById(R.id.my_image_view);
-        draweeView.setImageURI(uri);
+        draweeView.setImageURI(uri);*/
     }
 
 }
