@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import kai.kaiprivate.kai.KaiJavascript;
 import kai.kaiprivate.kai.KaiReflection;
+import kai.kaiprivate.kai.KaiSensors;
 import kai.kaiprivate.kai.KaiSpannable;
 import kai.kaiprivate.kai.KaiSpeech;
 import kai.kaiprivate.kai.imagegridview.KaiImageGridview;
@@ -90,8 +91,8 @@ public class MainActivity extends ActionBarActivity {
 //KaiPickerView
 //KaiYearClass
 //KaiParticle
-KaiSpeech
-
+//KaiSpeech
+KaiSensors
 
 
 
