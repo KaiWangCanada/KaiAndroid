@@ -12,6 +12,7 @@ import kai.kaiprivate.kai.KaiSpeech;
 import kai.kaiprivate.kai.imagegridview.KaiImageGridview;
 import kai.kaiprivate.pattern.observer.KaiObserver;
 import kai.kaiprivate.thirdparty.KaiAppIntro;
+import kai.kaiprivate.thirdparty.KaiDragSortListActivity;
 import kai.kaiprivate.thirdparty.KaiDragTopLayout;
 import kai.kaiprivate.thirdparty.KaiEventBus;
 import kai.kaiprivate.thirdparty.KaiFresco;
@@ -92,8 +93,8 @@ public class MainActivity extends ActionBarActivity {
 //KaiYearClass
 //KaiParticle
 //KaiSpeech
-KaiSensors
-
+//KaiSensors
+KaiDragSortListActivity
 
 
 

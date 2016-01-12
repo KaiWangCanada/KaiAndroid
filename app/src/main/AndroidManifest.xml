@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="kai.kaiprivate">
+<manifest package="kai.kaiprivate"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <uses-feature
         android:glEsVersion="0x00020000"
-        android:required="true" />
+        android:required="true"/>
 
     <application
         android:name="android.support.multidex.MultiDexApplication"
@@ -25,171 +25,173 @@
         tools:replace="android:icon">
         <meta-data
             android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
+            android:value="@integer/google_play_services_version"/>
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyDgthgSQlEpMBCyPHxa0a-GKtqNylfX8u0" />
+            android:value="AIzaSyDgthgSQlEpMBCyPHxa0a-GKtqNylfX8u0"/>
 
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".thirdparty.KaiMultiImageSelectorActivity"
-            android:label="@string/title_activity_kai_multi_image_selector"></activity>
+            android:label="@string/title_activity_kai_multi_image_selector"/>
         <activity
             android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
-            android:configChanges="orientation|screenSize" />
+            android:configChanges="orientation|screenSize"/>
         <activity
             android:name=".thirdparty.KaiPhotoGallary"
-            android:label="@string/title_activity_kai_photo_gallary"></activity>
+            android:label="@string/title_activity_kai_photo_gallary"/>
         <activity
             android:name=".tframe.PinyinListActivity"
-            android:label="@string/title_activity_pinyin_list"></activity>
+            android:label="@string/title_activity_pinyin_list"/>
         <activity
             android:name=".func.customview.UseLovelyView"
-            android:label="@string/title_activity_use_lovely_view"></activity>
+            android:label="@string/title_activity_use_lovely_view"/>
         <activity
             android:name=".thirdparty.KaiPullToRefresh"
-            android:label="@string/title_activity_kai_pull_to_refresh"></activity>
+            android:label="@string/title_activity_kai_pull_to_refresh"/>
         <activity
             android:name=".thirdparty.KaiPhotoView"
-            android:label="@string/title_activity_kai_photo_view"></activity>
+            android:label="@string/title_activity_kai_photo_view"/>
         <activity
             android:name=".thirdparty.KaiPhotoViewB"
-            android:label="@string/title_activity_kai_photo_view_b"></activity>
+            android:label="@string/title_activity_kai_photo_view_b"/>
         <activity
             android:name=".thirdparty.KaiPhotoViewPngAbove"
-            android:label="@string/title_activity_kai_photo_view_png_above"></activity>
+            android:label="@string/title_activity_kai_photo_view_png_above"/>
         <activity
             android:name=".opencv.KaiOpenCV"
-            android:label="@string/title_activity_kai_open_cv"></activity>
+            android:label="@string/title_activity_kai_open_cv"/>
         <activity
             android:name=".thirdparty.KaiUniversalImageLoader"
-            android:label="@string/title_activity_kai_universal_image_loader"></activity>
+            android:label="@string/title_activity_kai_universal_image_loader"/>
         <activity
             android:name=".thirdparty.KaiUltraPullToRefresh"
-            android:label="@string/title_activity_kai_ultra_pull_to_refresh"></activity>
+            android:label="@string/title_activity_kai_ultra_pull_to_refresh"/>
         <activity
             android:name=".kai.KaiUIL4MMF"
-            android:label="@string/title_activity_kai_uil4_mmf"></activity>
+            android:label="@string/title_activity_kai_uil4_mmf"/>
         <activity
             android:name=".thirdparty.KaiGIF"
-            android:label="@string/title_activity_kai_gif"></activity>
+            android:label="@string/title_activity_kai_gif"/>
         <activity
             android:name=".thirdparty.KaiKenBurnView"
-            android:label="@string/title_activity_kai_ken_burn_view"></activity>
+            android:label="@string/title_activity_kai_ken_burn_view"/>
         <activity
             android:name=".kai.KaiTextViewTimePicker4MMF"
-            android:label="@string/title_activity_kai_text_view_time_picker4_mmf"></activity>
+            android:label="@string/title_activity_kai_text_view_time_picker4_mmf"/>
         <activity
             android:name=".thirdparty.KaiBitmapUtils"
-            android:label="@string/title_activity_kai_bitmap_utils"></activity>
+            android:label="@string/title_activity_kai_bitmap_utils"/>
         <activity
             android:name=".thirdparty.KaiColorArt"
-            android:label="@string/title_activity_kai_color_art"></activity>
+            android:label="@string/title_activity_kai_color_art"/>
         <activity
             android:name=".thirdparty.KaiHttpUtils"
-            android:label="@string/title_activity_kai_http_utils"></activity>
+            android:label="@string/title_activity_kai_http_utils"/>
         <activity
             android:name=".thirdparty.KaiAndroidBootStrap"
-            android:label="@string/title_activity_kai_android_boot_strap"></activity>
+            android:label="@string/title_activity_kai_android_boot_strap"/>
         <activity
             android:name=".thirdparty.KaiCaligraphy"
-            android:label="@string/title_activity_kai_caligraphy"></activity>
+            android:label="@string/title_activity_kai_caligraphy"/>
         <activity
             android:name=".thirdparty.gmaputils.KaiGMapUtils"
-            android:label="@string/title_activity_kai_gmap_utils"></activity>
+            android:label="@string/title_activity_kai_gmap_utils"/>
         <activity
             android:name=".thirdparty.gmaputils.KaiGMapUtilsCustomMarker"
-            android:label="@string/title_activity_base_gmap"></activity>
+            android:label="@string/title_activity_base_gmap"/>
         <activity
             android:name=".pattern.observer.KaiObserver"
-            android:label="@string/title_activity_kai_observer"></activity>
+            android:label="@string/title_activity_kai_observer"/>
         <activity
             android:name=".thirdparty.discrollview.KaiDiscroll"
-            android:label="@string/title_activity_kai_observer"></activity>
+            android:label="@string/title_activity_kai_observer"/>
         <activity
             android:name=".thirdparty.KaiEventBus"
-            android:label="@string/title_activity_kai_event_bus"></activity>
+            android:label="@string/title_activity_kai_event_bus"/>
         <activity
             android:name=".thirdparty.parse.KaiParse"
-            android:label="@string/title_activity_kai_parse"></activity>
+            android:label="@string/title_activity_kai_parse"/>
         <activity
             android:name=".thirdparty.rxjava.KaiRxJava"
-            android:label="@string/title_activity_kai_rx_java"></activity>
+            android:label="@string/title_activity_kai_rx_java"/>
         <activity
             android:name=".thirdparty.guava.KaiGuavaOrderList"
-            android:label="@string/title_activity_kai_guava_order_list"></activity>
+            android:label="@string/title_activity_kai_guava_order_list"/>
         <activity
             android:name=".thirdparty.guava.KaiGuavaEventBus"
-            android:label="@string/title_activity_kai_guava_event_bus"></activity>
+            android:label="@string/title_activity_kai_guava_event_bus"/>
         <activity
             android:name=".kai.KaiReflection"
-            android:label="@string/title_activity_kai_reflection"></activity>
+            android:label="@string/title_activity_kai_reflection"/>
         <activity
             android:name=".kai.KaiSpannable"
-            android:label="@string/title_activity_kai_spannable"></activity>
+            android:label="@string/title_activity_kai_spannable"/>
         <activity
             android:name=".thirdparty.KaiYoyo"
-            android:label="@string/title_activity_kai_spannable"></activity>
+            android:label="@string/title_activity_kai_spannable"/>
         <activity
             android:name=".thirdparty.KaiDragTopLayout"
-            android:label="@string/title_activity_kai_drag_top_layout"></activity>
+            android:label="@string/title_activity_kai_drag_top_layout"/>
         <activity
             android:name=".thirdparty.KaiPhysicsLayout"
-            android:label="@string/title_activity_kai_physics_layout"></activity>
+            android:label="@string/title_activity_kai_physics_layout"/>
         <activity
             android:name=".thirdparty.KaiLogger"
-            android:label="@string/title_activity_kai_logger"></activity>
+            android:label="@string/title_activity_kai_logger"/>
         <activity
             android:name=".thirdparty.KaiTooltipView"
-            android:label="@string/title_activity_kai_tooltip_view"></activity>
+            android:label="@string/title_activity_kai_tooltip_view"/>
         <activity
             android:name=".thirdparty.KaiShowTipView"
-            android:label="@string/title_activity_kai_show_tip_view"></activity>
+            android:label="@string/title_activity_kai_show_tip_view"/>
         <activity
             android:name=".thirdparty.KaiAppIntro"
-            android:label="@string/title_activity_kai_app_intro"></activity>
+            android:label="@string/title_activity_kai_app_intro"/>
         <activity
             android:name=".thirdparty.KaiTimeSquare"
-            android:label="@string/title_activity_kai_time_square"></activity>
+            android:label="@string/title_activity_kai_time_square"/>
         <activity
             android:name=".kai.KaiJavascript"
-            android:label="@string/title_activity_kai_javascript"></activity>
+            android:label="@string/title_activity_kai_javascript"/>
         <activity
             android:name=".thirdparty.KaiIntents"
-            android:label="@string/title_activity_kai_intents"></activity>
+            android:label="@string/title_activity_kai_intents"/>
         <activity
             android:name=".kai.imagegridview.KaiImageGridview"
-            android:label="@string/title_activity_kai_image_gridview"></activity>
+            android:label="@string/title_activity_kai_image_gridview"/>
         <activity
             android:name=".thirdparty.KaiIoCard"
-            android:label="@string/title_activity_kai_io_card"></activity>
+            android:label="@string/title_activity_kai_io_card"/>
         <activity
             android:name=".thirdparty.KaiFresco"
-            android:label="@string/title_activity_kai_fresco"></activity>
+            android:label="@string/title_activity_kai_fresco"/>
         <activity
             android:name=".thirdparty.KaiPickerView"
-            android:label="@string/title_activity_kai_picker_view"></activity>
+            android:label="@string/title_activity_kai_picker_view"/>
         <activity
             android:name=".thirdparty.KaiYearClass"
-            android:label="@string/title_activity_kai_year_class"></activity>
+            android:label="@string/title_activity_kai_year_class"/>
         <activity
             android:name=".thirdparty.KaiParticle"
-            android:label="@string/title_activity_kai_particle"></activity>
+            android:label="@string/title_activity_kai_particle"/>
         <activity
             android:name=".kai.KaiSpeech"
-            android:label="@string/title_activity_kai_speech"></activity>
+            android:label="@string/title_activity_kai_speech"/>
         <activity
             android:name=".kai.KaiSensors"
             android:label="@string/title_activity_kai_sensors"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".thirdparty.KaiDragSortListActivity">
+        </activity>
     </application>
 
 </manifest>

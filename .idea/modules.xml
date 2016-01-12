@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/KaiAndroid.iml" filepath="$PROJECT_DIR$/KaiAndroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/Slidr/Slidr.iml" filepath="$PROJECT_DIR$/Slidr/Slidr.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dragsortlist/dragsortlist.iml" filepath="$PROJECT_DIR$/dragsortlist/dragsortlist.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/mmfbase/mmfbase.iml" filepath="$PROJECT_DIR$/mmfbase/mmfbase.iml" />
       <module fileurl="file://$PROJECT_DIR$/multi-image-selector/multi-image-selector.iml" filepath="$PROJECT_DIR$/multi-image-selector/multi-image-selector.iml" />

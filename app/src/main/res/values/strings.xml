@@ -52,4 +52,19 @@
     <string name="title_activity_kai_particle">KaiParticle</string>
     <string name="title_activity_kai_speech">KaiSpeech</string>
     <string name="title_activity_kai_sensors">KaiSensors</string>
+
+    <string-array name="countries">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>American Samoa</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antigua and Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Australia</item>
+    </string-array>
+
 </resources>
